@@ -1,0 +1,42 @@
+#naviframe {
+    font-size: 16px;
+    background: rgb(255,255,255);
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+#topnav a {
+    color: rgb(0,0,0);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 20px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    transition: font-size 0.1s;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+#topnav a:hover {
+    font-size: 22px;
+    transition: font-size 0.1s;
+}
+#topnav div a {
+    font-size: 16px;
+    transition: none;
+    z-index: 10;
+}
+#topnav div a:hover {
+    font-size: 16px;
+    transition: none;
+}
+#navhome {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -5px);
+}
