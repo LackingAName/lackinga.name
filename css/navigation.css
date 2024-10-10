@@ -35,8 +35,8 @@
     font-size: 16px;
     transition: none;
 }
-#navhome {
+#navindex {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -5px);
+    transform: translate(-50%,0);
 }
