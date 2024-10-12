@@ -11,4 +11,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             location.href = (location.href + ".html")
         }
     }
+
+    document.getElementById("lans").src = "images/lans/" + (Math.floor(Math.random() * Math.floor(16)) + 1) + ".png"
 })
