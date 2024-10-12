@@ -2,11 +2,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $ (function() {
         $ ("#naviframe").load("/html/navigation.html");
     })
-
-    document.addEventListener('load', function() {
-        if (document.getElementById("nav" + document.body.id) != null) {
-            document.getElementById("nav" + document.body.id).style.color = "white"
-        }
+    $ (function() {
+        $ ("#cmd").load("/html/cmd.html");
     })
 
     if (document.body.id == "404") {
