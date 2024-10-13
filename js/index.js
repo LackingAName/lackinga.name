@@ -14,8 +14,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (document.body.id == "index") {
         document.getElementById("lans").src = "images/lans/" + (Math.floor(Math.random() * Math.floor(16)) + 1) + ".png"
     }
-
-    $(function() {
-        $("#smooth").smoothState();
-    });
 })
