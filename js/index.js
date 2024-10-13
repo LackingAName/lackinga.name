@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+    $("html").css("overflow-x", "hidden")
+
     $ (function() {
         $ ("#naviframe").load("/html/navigation.html");
     })
@@ -13,5 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("lans").src = "images/lans/" + (Math.floor(Math.random() * Math.floor(16)) + 1) + ".png"
     }
 
-    $("html").css("overflow-x", "hidden")
+    $(function() {
+        $("smooth").smoothState();
+    });
 })
