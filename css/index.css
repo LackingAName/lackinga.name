@@ -3,6 +3,10 @@
     font-family: "Roboto Mono";
     src: url("/fonts/RobotoMono.ttf");
 }
+@font-face {
+    font-family: "Inconsolata";
+    src: url("/fonts/Inconsolata.ttf");
+}
 
 /*animations*/
 @keyframes rgbtextmove {
@@ -14,20 +18,10 @@
         background-position: 70% 0;
     }
 }
-@keyframes cmdblink {
-    0%, 49.99%, 100% {
-        opacity: 100%;
-    }
-
-    50%, 99.99% {
-        opacity: 0%;
-    }
-}
 
 * {
     text-decoration: none;
     scroll-behavior: smooth;
-    user-select: none;
 }
 html, body {
     margin: 0;
@@ -56,6 +50,10 @@ body {
 ::-webkit-scrollbar-button {
     background: #fff;
     height: 48px;
+}
+
+a, h1, h2, h3, p, button {
+    user-select: none;
 }
 
 a {
@@ -201,18 +199,4 @@ button {
 }
 .groupInfoDiv p {
     height: 100%;
-}
-
-#cmd {
-    position: relative;
-    width: 100%;
-}
-#cmd p {
-    font-size: 12px;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    animation: cmdblink 1s linear infinite;
 }
