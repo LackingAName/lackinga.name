@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     $(function() {
-        $("smooth").smoothState();
+        $("#smooth").smoothState();
     });
 })
