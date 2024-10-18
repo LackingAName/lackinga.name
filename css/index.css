@@ -18,6 +18,25 @@
         background-position: 70% 0;
     }
 }
+@keyframes secretmove-right {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 40.12%;
+    }
+}
+@keyframes secretmove-left {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 59.88%;
+    }
+}
+
 
 * {
     text-decoration: none;
@@ -199,4 +218,38 @@ button {
 }
 .groupInfoDiv p {
     height: 100%;
+}
+
+#credits {
+    width: 1000px;
+    height: 100%;
+    border: #fff 1px solid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.creditleft {
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+}
+.creditright {
+    text-align: right;
+    width: 100%;
+    font-size: 35px;
+}
+
+.secretr {
+    position: relative;
+    width: 500%;
+    transform: translateX(-50%);
+
+    animation: secretmove-right 2s linear infinite;
+}
+.secretl {
+    position: relative;
+    width: 500%;
+    transform: translateX(-50%);
+
+    animation: secretmove-left 2s linear infinite;
 }

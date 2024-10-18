@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     $("html").css("overflow-x", "hidden")
 
-    $ (function() {
-        $ ("#naviframe").load("/html/navigation.html");
+    $(function() {
+        $("#naviframe").load("/html/navigation.html");
     })
 
     if (document.body.id == "404") {
@@ -13,5 +13,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     if (document.body.id == "index") {
         document.getElementById("lans").src = "images/lans/" + (Math.floor(Math.random() * Math.floor(16)) + 1) + ".png"
+    }
+    if (document.body.id == "secret") {
+        document.getElementById("bg").volume = 0.25;
     }
 })

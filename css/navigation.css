@@ -1,6 +1,6 @@
 #naviframe {
     font-size: 16px;
-    background: rgb(255,255,255);
+    background: #fff;
     height: 3em;
     width: 100%;
     position: fixed;
@@ -8,14 +8,13 @@
     z-index: 9999;
 }
 #topnav a {
-    color: rgb(0,0,0);
+    color: #000;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 20px;
     font-size: 20px;
     font-family: "Roboto Mono";
     font-weight: bold;
     transform-origin: center;
-    width: 100px;
 
     transition: transform 0.1s;
 }
