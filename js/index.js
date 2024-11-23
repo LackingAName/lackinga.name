@@ -1,8 +1,19 @@
 function SetImage(ImageURL,Element,Type) {
-    $.getJSON(ImageURL,async function(Data) {
-        var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
-        ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
+    $.ajax({
+        url: ImageURL,
+        type: "GET",
+        dataType: "json",
+        success: function(Data) {
+            var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
+            ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
+        },
+        error: function() {alert("it no worky");},
+        beforeSend: SetHeaders
     });
+
+    function SetHeaders(xhr) {
+        xhr.setRequestHeader("Access-Control-Allow-Origin","*");
+    }
 };
 
 document.addEventListener("DOMContentLoaded", (event) => {
