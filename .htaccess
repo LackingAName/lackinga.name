@@ -9,6 +9,8 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
 ErrorDocument 404 /404.html
 
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-</IfModule>
+<FilesMatch "\.(js)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
