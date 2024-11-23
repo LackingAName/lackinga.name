@@ -1,19 +1,14 @@
 function SetImage(ImageURL,Element,Type) {
-    $.ajax({
-        url: ImageURL,
-        type: "GET",
-        dataType: "json",
-        success: function(Data) {
-            var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
-            ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
-        },
-        beforeSend: SetHeaders
-    });
-
-    function SetHeaders(xhr) {
-        xhr.setRequestHeader("Access-Control-Allow-Origin","*");
-        xhr.setRequestHeader("Referer","");
-    }
+    fetch(ImageURL, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin":"*",
+        }
+    }).then(response => response.json()).then(Data => {
+        var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
+        ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
+    })
 };
 
 document.addEventListener("DOMContentLoaded", (event) => {
