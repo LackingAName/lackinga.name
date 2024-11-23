@@ -12,6 +12,7 @@ function SetImage(ImageURL,Element,Type) {
 
     function SetHeaders(xhr) {
         xhr.setRequestHeader("Access-Control-Allow-Origin","*");
+        xhr.setRequestHeader("Referer","");
     }
 };
 
