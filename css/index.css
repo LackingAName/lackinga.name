@@ -219,6 +219,14 @@ button {
 .groupInfoDiv p {
     height: 100%;
 }
+.groupBanner {
+    width: calc(100% - 300px);
+    height: 300px;
+    position: absolute;
+    transform: translateY(-352px);
+    object-fit: cover;
+    z-index: -100;
+}
 
 #credits {
     width: 1000px;
