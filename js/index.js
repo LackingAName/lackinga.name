@@ -7,7 +7,6 @@ function SetImage(ImageURL,Element,Type) {
             var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
             ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
         },
-        error: function() {alert("it no worky");},
         beforeSend: SetHeaders
     });
 
