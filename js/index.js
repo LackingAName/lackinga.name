@@ -1,9 +1,8 @@
 function SetImage(ImageURL,Element,Type) {
-    fetch(ImageURL, {
+    fetch("https://cors-anywhere.herokuapp.com/" + ImageURL, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin":"*",
         }
     }).then(response => response.json()).then(Data => {
         var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
