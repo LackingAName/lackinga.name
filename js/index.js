@@ -1,13 +1,20 @@
-function SetImage(ImageURL,Element,Type) {
-    fetch("https://cors-anywhere.herokuapp.com/" + ImageURL, {
+function SetImage(AssetURL,Element,Type) {
+    fetch("https://cors-anywhere.herokuapp.com/" + AssetURL, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
         }
     }).then(response => response.json()).then(Data => {
         var ImageElement = document.getElementById(Element).getElementsByClassName(Type)[0];
-        ImageElement.src = Data.versions[Data.versions.length - 1].file.url;
-    })
+        var ImageURL = Data.versions[Data.versions.length - 1].file.url;
+        if (Type == "groupInfoDiv") {
+            ImageElement.style.backgroundImage = `url(${ImageURL})`;
+        } else {
+            ImageElement.src = ImageURL;
+        };
+    }).catch((error) => {
+        console.log(error);
+    });
 };
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -28,6 +35,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     if (document.body.id == "vrchat") {
+        const rn = new Date();
+        const Today = new Date(rn.getFullYear(),rn.getMonth(),rn.getDate());
+        const Release = new Date(2024,11,18);
+        function Wednesday3000(Days,StartDate,EndDate) {
+            var DaysCount = 1 + Math.round((EndDate - StartDate) / (24 * 3600 * 1000));
+            var Total = function(A,B) {
+                return A + Math.floor((DaysCount + (StartDate.getDay() + 6 - B) % 7) / 7);};
+            return Days.reduce(Total,0);
+        }
+        document.getElementById("world3glimpse").innerHTML = "next".repeat(Wednesday3000([3],Today,Release)) + "wednesday";
+        
         SetImage("https://api.vrchat.cloud/api/1/file/file_0ed03716-b4fc-43af-8d37-b0028d76a085","world1","worldImg");
         SetImage("https://api.vrchat.cloud/api/1/file/file_5a108c65-d131-4eff-8479-551c5d3c66e4","world2","worldImg");
         SetImage("https://api.vrchat.cloud/api/1/file/file_fef2518b-75fa-43f3-a04d-6d1108f2fdb4","world5","worldImg");
@@ -48,6 +66,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         SetImage("https://api.vrchat.cloud/api/1/file/file_2f7ce9a4-b1aa-40c9-8e9b-ab174ccd6744","group4","groupBanner");
         SetImage("https://api.vrchat.cloud/api/1/file/file_87ee6437-8ae4-4d91-b065-2d027c6edd6b","group5","groupImg");
         SetImage("https://api.vrchat.cloud/api/1/file/file_c37100d8-6469-4117-ad35-e2c4924e4730","group5","groupBanner");
+        
+        //SetImage("https://api.vrchat.cloud/api/1/file/file_c37100d8-6469-4117-ad35-e2c4924e4730","test1","groupInfoDiv");
     };
 
     if (document.body.id == "secret") {
