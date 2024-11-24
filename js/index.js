@@ -17,6 +17,14 @@ function SetImage(AssetURL,Element,Type) {
     });
 };
 
+window.onload = function() {
+    var Favicon = top.document.createElement("link");
+    Favicon.rel = "icon";
+    Favicon.href = "/images/lackingnamesthatb.png";
+    Favicon.type = "image/x-icon";
+    top.document.getElementsByTagName("head")[0].appendChild(Favicon);
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
     $("html").css("overflow-x", "hidden");
 
@@ -31,7 +39,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     if (document.body.id == "index") {
-        document.getElementById("lans").src = "images/lans/" + (Math.floor(Math.random() * Math.floor(16)) + 1) + ".png";
+        document.getElementById("User").src = "images/User/" + (Math.floor(Math.random() * Math.floor(23)) + 1) + ".png";
     };
 
     if (document.body.id == "vrchat") {
