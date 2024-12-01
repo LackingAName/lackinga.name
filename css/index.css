@@ -132,6 +132,11 @@ button {
     border-radius: 15px;
     background: rgb(255,255,255);
 }
+video {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
 
 #fourOfour {
     font-size: 100px;
@@ -302,19 +307,4 @@ button {
     text-align: right;
     width: 100%;
     font-size: 35px;
-}
-
-.secretr {
-    position: relative;
-    width: 500%;
-    transform: translateX(-50%);
-
-    animation: secretmove-right 2s linear infinite;
-}
-.secretl {
-    position: relative;
-    width: 500%;
-    transform: translateX(-50%);
-
-    animation: secretmove-left 2s linear infinite;
 }
