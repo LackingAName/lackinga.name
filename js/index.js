@@ -4,9 +4,9 @@ window.onload = function() {
     Favicon.href = "/favicon.ico";
     Favicon.type = "image/x-icon";
     top.document.getElementsByTagName("head")[0].appendChild(Favicon);
-}
+};
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded",() => {
     $("html").css("overflow-x", "hidden");
 
     $(function() {
