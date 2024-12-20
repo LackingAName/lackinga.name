@@ -195,6 +195,10 @@ video {
     display: block;
     margin: auto;
 }
+#UserLabel {
+    color: #888;
+    font-size: 24px;
+}
 #logo {
     width: 256px;
     height: 256px;

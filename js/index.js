@@ -14,10 +14,8 @@ document.addEventListener("DOMContentLoaded",() => {
     });
 
     if (document.body.id == "index") {
-        document.getElementById("User").src = "images/User/" + (Math.floor(Math.random() * Math.floor(23)) + 1) + ".png";
-    };
-
-    if (document.body.id == "secret") {
-        document.getElementById("bg").volume = 0.25;
+        const Random = (Math.floor(Math.random() * Math.floor(25)) + 1);
+        document.getElementById("User").src = "images/User/" + Random + ".png";
+        document.getElementById("UserLabel").innerHTML = Random;
     };
 });
