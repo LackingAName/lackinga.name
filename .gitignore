@@ -1,0 +1,8 @@
+# maybe
+.htaccess
+
+# psd files for tfod images
+/images/User/psd
+
+# bat file I made to download the clips
+_clipper9000.bat

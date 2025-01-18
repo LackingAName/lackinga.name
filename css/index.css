@@ -1,0 +1,289 @@
+/*fonts*/
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("/fonts/RobotoMono.ttf");
+}
+@font-face {
+    font-family: "Inconsolata";
+    src: url("/fonts/Inconsolata.ttf");
+}
+
+/*animations*/
+@keyframes rgbtextmove {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 70% 0;
+    }
+}
+@keyframes secretmove-right {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 40.12%;
+    }
+}
+@keyframes secretmove-left {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 59.88%;
+    }
+}
+
+
+* {
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    min-height: 100vh;
+}
+::selection {
+    color: #000;
+    background-color: rgba(255,255,255,0.7)
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #808080;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+}
+::-webkit-scrollbar-button {
+    background: #fff;
+    height: 48px;
+}
+
+a, h1, h2, h3, p, button {
+    user-select: none;
+}
+
+a {
+    text-align: center;
+    color: #0080ff;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    font-size: 40px;
+    display: block;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-weight: 1000;
+    font-size: 80px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-weight: 1000;
+    font-size: 40px;
+    margin: 0;
+}
+h3 {
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+p {
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+}
+button {
+    text-align: center;
+    color: #000;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    width: 20ex;
+    height: 2em;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: rgb(255,255,255);
+}
+video {
+    aspect-ratio: 16 / 9;
+    max-height: 720px;
+    margin: auto;
+    display: block;
+}
+
+#error {
+    font-size: 100px;
+    letter-spacing: 10vw;
+    text-indent: 10vw;
+}
+#naviframeSpace {
+    height: 50px;
+}
+
+.linebreak {
+    color: #fff;
+    border-top: 5px;
+    border-top-style: solid;
+    display: table;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.rgbtext {
+    color: transparent;
+    background: linear-gradient(to right, 
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080
+        /* all just for seamless scrolling rgb */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rgbtextmove 6s linear infinite;
+    background-size: 400% 100%;
+}
+
+#UserContainer {
+    width: 512px;
+    height: 512px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+#UserButton {
+    background: #ffffff00;
+    color: #ffffff00;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#UserButton:hover {
+    background: #ffffff40;
+    color: #fff;
+}
+#UserLabel {
+    color: #888;
+    font-size: 24px;
+}
+#logo {
+    width: 256px;
+    height: 256px;
+    display: block;
+    margin: auto;
+}
+
+.world {
+    display: flex;
+    flex-direction: row;
+}
+.world p {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+}
+.world h1 {
+    font-size: 40px;
+    margin: 0;
+    text-align: left;
+}
+.world div p {
+    text-align: left;
+}
+.worldImg {
+    aspect-ratio: 4 / 3;
+    height: 300px;
+}
+.groupImg {
+    aspect-ratio: 1 / 1;
+    height: 300px;
+}
+.groupInfoDiv {
+    width: 100%;
+    background-size: contain;
+}
+.groupInfoDiv p, h1 {
+    background-color: rgba(0,0,0,0.3);
+}
+.groupInfoDiv p {
+    height: 100%;
+}
+.groupBanner {
+    width: calc(100% - 300px);
+    height: 300px;
+    position: absolute;
+    transform: translateY(-352px);
+    object-fit: cover;
+    z-index: -100;
+}
+
+#credits {
+    width: 1000px;
+    height: 100%;
+    border: #fff 1px solid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.creditleft {
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+}
+.creditright {
+    text-align: right;
+    width: 100%;
+    font-size: 35px;
+}
