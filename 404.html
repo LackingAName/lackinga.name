@@ -13,6 +13,7 @@
         
         <h1 id="error">404</h1>
         <p>where u goin</p>
-        <button onclick="location.href = '/'">return to home</button>
+        <button onclick="if (document.referrer != '') {location.href = document.referrer} else {this.innerHTML = 'no referrer'; this.style.background = '#f00'; this.style.color = '#fff'; this.style.cursor = 'default'}">return</button>
+        <button onclick="location.href = '/'">index</button>
     </body>
 </html>

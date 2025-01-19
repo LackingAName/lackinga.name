@@ -1,5 +1,6 @@
 function LoadUser() {
-    const Random = (Math.floor(Math.random() * Math.floor(20)) + 1)
+    var Random = (Math.floor(Math.random() * Math.floor(20)) + 1)
+    if (Random == document.getElementById("UserLabel").innerHTML) {Random += 1}
     document.getElementById("User").src = "images/User/" + Random + ".png"
     document.getElementById("UserLabel").innerHTML = Random
 }
