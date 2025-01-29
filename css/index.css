@@ -191,16 +191,22 @@ video {
 }
 
 #UserContainer {
-    width: 512px;
+    width: 100%;
     height: 512px;
     display: block;
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#User {
+    max-width: 100%;
 }
 #UserButton {
     background: #ffffff00;
     color: #ffffff00;
-    width: 100%;
+    width: 512px;
     height: 100%;
     position: absolute;
     top: 0;
