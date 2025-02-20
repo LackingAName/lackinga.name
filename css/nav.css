@@ -7,6 +7,9 @@
     top: 0;
     z-index: 9999;
 }
+#naviframeSpace {
+    height: 50px;
+}
 .nav .item {
     text-align: center;
     padding: 0.125em 20px;
@@ -20,9 +23,9 @@
 .nav a {
     color: #000;
     font-size: 20px;
-    font-family: "Roboto Mono";
+    font-family: var(--font);
     font-weight: bold;
-
+    
     transition: transform 0.1s;
 }
 .nav a:hover {

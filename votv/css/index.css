@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Share-TechMono";
+    src: url("/fonts/Share-TechMono.ttf");
+}
+
+:root {
+    --font: "Share-TechMono";
+}
+
+* {
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    min-height: 100vh;
+}
+::selection {
+    color: #000;
+    background-color: rgba(255,255,255,0.7)
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #808080;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+}
+::-webkit-scrollbar-button {
+    background: #fff;
+    height: 48px;
+}
+
+a, h1, h2, h3, p, button {
+    user-select: none;
+}
+
+a {
+    text-align: center;
+    color: #0080ff;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 40px;
+    display: block;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 1000;
+    font-size: 80px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 1000;
+    font-size: 40px;
+    margin: 0;
+}
+h3 {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+p {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+button {
+    text-align: center;
+    color: #000;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    width: 20ex;
+    height: 2em;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background: rgb(255,255,255);
+}
+video {
+    aspect-ratio: 16 / 9;
+    max-height: 720px;
+    margin: auto;
+    display: block;
+}
+
+#error {
+    font-size: 100px;
+    letter-spacing: 10vw;
+    text-indent: 10vw;
+}
+#naviframeSpace {
+    height: 50px;
+}
+
+.linebreak {
+    color: #fff;
+    border-top: 5px;
+    border-top-style: solid;
+    display: table;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.rgbtext {
+    color: transparent;
+    background: linear-gradient(to right, 
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080
+        /* all just for seamless scrolling rgb */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rgbtextmove 6s linear infinite;
+    background-size: 400% 100%;
+}
+
+/* folder specific */
+#modslist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#modslist .mod {
+    display: flex;
+    border: #fff 2px solid;
+    border-top: 0;
+}
+#modslist .mod .info {
+    display: flex;
+    flex-direction: column;
+    border: #fff 2px solid;
+    border-top: 0;
+    width: 300px;
+}
+#modslist .mod .icon {
+    border: #fff 2px solid;
+    border-top: 0;
+    width: 256px;
+    height: 256px;
+}
+#modslist .mod p {
+    font-size: 20px;
+    text-align: left;
+}
+#modslist .mod .name {
+    font-weight: 1000;
+    font-size: 25px;
+}
+#modslist .mod .author {
+    color: #888;
+}
+#modslist .mod .lastupdated {
+    color: #bbb;
+}
+#modslist .mod .note {
+    color: #eee;
+}

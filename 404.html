@@ -8,12 +8,9 @@
         <script type="module" src="/modules/jquery.js"></script>
     </head>
     <body id="404">
-        <div id="naviframe"></div>
-        <div id="naviframeSpace"></div>
-        
         <h1 id="error">404</h1>
         <p>where u goin</p>
         <button onclick="if (document.referrer != '') {location.href = document.referrer} else {this.innerHTML = 'no referrer'; this.style.background = '#f00'; this.style.color = '#fff'; this.style.cursor = 'default'}">return</button>
-        <button onclick="location.href = '/'">index</button>
+        <button onclick="location.href = './'">index</button>
     </body>
 </html>
