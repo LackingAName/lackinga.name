@@ -2,9 +2,14 @@
     font-family: "Share-TechMono";
     src: url("/fonts/Share-TechMono.ttf");
 }
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("/fonts/RobotoMono.ttf");
+}
 
 :root {
     --font: "Share-TechMono";
+    --selectedOffset: 0px;
 }
 
 * {
@@ -94,7 +99,7 @@ button {
     font-size: 20px;
     border: 0;
     width: 20ex;
-    height: 2em;
+    height: max-content;
     user-select: none;
     cursor: pointer;
     display: block;
@@ -115,7 +120,7 @@ video {
     text-indent: 10vw;
 }
 #naviframeSpace {
-    height: 50px;
+    padding-bottom: 10px;
 }
 
 .linebreak {
@@ -202,4 +207,31 @@ video {
 }
 #modslist .mod .note {
     color: #eee;
+}
+
+#ss .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    margin: auto;
+}
+#ss .list div {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+}
+#ss .list h1 {
+    font-size: 20px;
+    text-align: left;
+    color: #ffbf66;
+    font-family: "Roboto Mono";
+}
+#ss .list p {
+    font-size: 20px;
+    text-align: left;
+    font-family: "Roboto Mono";
+}
+#ss .list img {
+    height: 400px;
 }

@@ -6,7 +6,7 @@
     z-index: 9999;
 }
 #naviframeSpace {
-    height: 85px;
+    height: 100px;
 }
 .bar {
     margin: auto;
@@ -15,6 +15,12 @@
     justify-content: center;
     align-items: center;
     height: 85px;
+    width: max-content;
+}
+#selected {
+    position: absolute;
+    top: 85px;
+    left: calc(22px + var(--selectedOffset));
 }
 .opts {
     color: #fff;
