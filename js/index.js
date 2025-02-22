@@ -9,43 +9,77 @@ function LoadUser() {
 
     DoULGlitch = (Random == 23)
     UL.style.color = "#fff"
-    UL.style.transform = "none";
+    UL.style.transform = "none"
+    UL.style.fontFamily = "Roboto Mono"
 }
 
 var DoULGlitch = false
+var ULGlitchDebounce = false
+var R = "`\'\"?&:;@#[]<>^_*/\\0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
 const ULGlitch = async () => {
-    if (!DoULGlitch || !document.getElementById("UserLabel")) {return}
+    if (!DoULGlitch || ULGlitchDebounce || !document.getElementById("UserLabel")) {return}
     var UL = document.getElementById("UserLabel")
     
-    if (Math.floor(Math.random() * Math.floor(10)) != 5) {return}
+    if (Math.floor(Math.random() * Math.floor(2)) != 1) {return}
+    ULGlitchDebounce = true
+    // Ik this code is attrocious
 
-    var Random9000 = (Math.floor(Math.random() * Math.floor(7)) + 1)
-    if (Random9000 == 1) { // Ik this code is attrocious
+    var RandomReplace1 = (Math.floor(Math.random() * Math.floor(4)) + 1)
+    if (RandomReplace1 == 2) {
+        var max = 3 + 1; var min = 2;
+        var replace = R.split("")[Math.floor(Math.random() * R.split("").length)]
+        UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),replace)
+    } else if (RandomReplace1 == 3) {
         var max = 3 + 1; var min = 2;
         UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),"?")
-    } else if (Random9000 == 2) {
-        UL.style.color = "#faa"
-    } else if (Random9000 == 3) {
+    }
+    var RandomReplace2 = (Math.floor(Math.random() * Math.floor(4)) + 1)
+    if (RandomReplace2 == 2) {
+        var max = 3 + 1; var min = 2;
+        var replace = R.split("")[Math.floor(Math.random() * R.split("").length)]
+        UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),replace)
+    } else if (RandomReplace1 == 3) {
+        var max = 3 + 1; var min = 2;
+        UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),"?")
+    }
+
+    var RandomColor = (Math.floor(Math.random() * Math.floor(6)) + 1)
+    if (RandomColor == 2) {
+        var max = 90 + 1; var min = 70;
+        UL.style.color = "hsl(0,100%," + Math.floor(Math.random() * (max - min) + min) + "%)"
+    } else if (RandomColor == 3) {
+        UL.style.color = "#888"
+    } else if (RandomColor == 4) {
+        UL.style.color = "#aaa"
+    }
+
+    var RandomTransform = (Math.floor(Math.random() * Math.floor(10)) + 1)
+    if (RandomTransform == 3) {
         var max = 50 + 1; var min = -50;
         UL.style.transform = "translateX(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (Random9000 == 4) {
+    } else if (RandomTransform == 4) {
         var max = 50 + 1; var min = -50;
         UL.style.transform = "translateY(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (Random9000 == 5) {
-        var max = 150 + 1; var min = 50;
+    } else if (RandomTransform == 5) {
+        var max = 150 + 1; var min = 10;
         UL.style.transform = "scaleX(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (Random9000 == 6) {
-        var max = 150 + 1; var min = 50;
+    } else if (RandomTransform == 6) {
+        var max = 150 + 1; var min = 10;
         UL.style.transform = "scaleY(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (Random9000 == 7) {
+    } else if (RandomTransform == 7) {
         var max = 10 + 1; var min = -10;
         UL.style.transform = "skewY(" + Math.floor(Math.random() * (max - min) + min) + "deg)";
+    } else if (RandomTransform == 8) {
+        var max = 30 + 1; var min = -30;
+        UL.style.transform = "rotatez(" + Math.floor(Math.random() * (max - min) + min) + "deg)";
     }
 
     await delay(1);
     UL.innerHTML = "23"
     UL.style.color = "#fff"
     UL.style.transform = "none";
+    UL.style.fontFamily = "Share-TechMono"
+    ULGlitchDebounce = false
 }
 
 window.onload = function() {
