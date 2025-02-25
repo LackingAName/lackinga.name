@@ -11,11 +11,13 @@ function LoadUser() {
     UL.style.color = "#fff"
     UL.style.transform = "none"
     UL.style.fontFamily = "Roboto Mono"
+    UL.style.cursor = null
+    UL.onclick = null
 }
 
 var DoULGlitch = false
 var ULGlitchDebounce = false
-var R = "`\'\"?&:;@#[]<>^_*/\\0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+var R = "`\'\"&:;@#[]<>^_*/\\0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
 const ULGlitch = async () => {
     if (!DoULGlitch || ULGlitchDebounce || !document.getElementById("UserLabel")) {return}
     var UL = document.getElementById("UserLabel")
@@ -24,21 +26,21 @@ const ULGlitch = async () => {
     ULGlitchDebounce = true
     // Ik this code is attrocious
 
-    var RandomReplace1 = (Math.floor(Math.random() * Math.floor(4)) + 1)
+    var RandomReplace1 = (Math.floor(Math.random() * Math.floor(6)) + 1)
     if (RandomReplace1 == 2) {
         var max = 3 + 1; var min = 2;
         var replace = R.split("")[Math.floor(Math.random() * R.split("").length)]
         UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),replace)
-    } else if (RandomReplace1 == 3) {
+    } else if (RandomReplace1 == 3 || RandomReplace1 == 4 || RandomReplace1 == 5) {
         var max = 3 + 1; var min = 2;
         UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),"?")
     }
-    var RandomReplace2 = (Math.floor(Math.random() * Math.floor(4)) + 1)
+    var RandomReplace2 = (Math.floor(Math.random() * Math.floor(6)) + 1)
     if (RandomReplace2 == 2) {
         var max = 3 + 1; var min = 2;
         var replace = R.split("")[Math.floor(Math.random() * R.split("").length)]
         UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),replace)
-    } else if (RandomReplace1 == 3) {
+    } else if (RandomReplace2 == 3 || RandomReplace2 == 4 || RandomReplace2 == 5) {
         var max = 3 + 1; var min = 2;
         UL.innerHTML = UL.innerHTML.replace(Math.floor(Math.random() * (max - min) + min).toString(),"?")
     }
@@ -53,32 +55,50 @@ const ULGlitch = async () => {
         UL.style.color = "#aaa"
     }
 
-    var RandomTransform = (Math.floor(Math.random() * Math.floor(10)) + 1)
-    if (RandomTransform == 3) {
+    var Transform = ""
+
+    var RandomTranslate = (Math.floor(Math.random() * Math.floor(10)) + 1)
+    if (RandomTranslate == 5) {
         var max = 50 + 1; var min = -50;
-        UL.style.transform = "translateX(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (RandomTransform == 4) {
-        var max = 50 + 1; var min = -50;
-        UL.style.transform = "translateY(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (RandomTransform == 5) {
-        var max = 150 + 1; var min = 10;
-        UL.style.transform = "scaleX(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (RandomTransform == 6) {
-        var max = 150 + 1; var min = 10;
-        UL.style.transform = "scaleY(" + Math.floor(Math.random() * (max - min) + min) + "%)";
-    } else if (RandomTransform == 7) {
-        var max = 10 + 1; var min = -10;
-        UL.style.transform = "skewY(" + Math.floor(Math.random() * (max - min) + min) + "deg)";
-    } else if (RandomTransform == 8) {
-        var max = 30 + 1; var min = -30;
-        UL.style.transform = "rotatez(" + Math.floor(Math.random() * (max - min) + min) + "deg)";
+        Transform += "translateX(" + Math.floor(Math.random() * (max - min) + min) + "%) ";
+    } else if (RandomTranslate == 6) {
+        var max = 50 + 1; var min = -30;
+        Transform += "translateY(" + Math.floor(Math.random() * (max - min) + min) + "%) ";
     }
+
+    var RandomScale = (Math.floor(Math.random() * Math.floor(10)) + 1)
+    if (RandomScale == 5) {
+        var max = 150 + 1; var min = 10;
+        Transform += "scaleX(" + Math.floor(Math.random() * (max - min) + min) + "%) ";
+    } else if (RandomScale == 6) {
+        var max = 150 + 1; var min = 10;
+        Transform += "scaleY(" + Math.floor(Math.random() * (max - min) + min) + "%) ";
+    }
+
+    var RandomSkew = (Math.floor(Math.random() * Math.floor(10)) + 1)
+    if (RandomSkew == 5) {
+        var max = 40 + 1; var min = -40;
+        Transform += "skewX(" + Math.floor(Math.random() * (max - min) + min) + "deg) ";
+    } else if (RandomSkew == 6) {
+        var max = 10 + 1; var min = -10;
+        Transform += "skewY(" + Math.floor(Math.random() * (max - min) + min) + "deg) ";
+    }
+
+    var RandomRotate = (Math.floor(Math.random() * Math.floor(10)) + 1)
+    if (RandomRotate == 5) {
+        var max = 30 + 1; var min = -30;
+        Transform += "rotateZ(" + Math.floor(Math.random() * (max - min) + min) + "deg) ";
+    }
+
+    UL.style.transform = Transform
 
     await delay(1);
     UL.innerHTML = "23"
     UL.style.color = "#fff"
     UL.style.transform = "none";
     UL.style.fontFamily = "Share-TechMono"
+    UL.style.cursor = "pointer"
+    UL.onclick = () => {location.href = "/votv"}
     ULGlitchDebounce = false
 }
 
@@ -105,5 +125,5 @@ document.addEventListener("DOMContentLoaded",() => {
     $(function() {$("#naviframe").load("/html/nav.html")})
 
     if (document.body.id == "index") {LoadUser()}
-    if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
+    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
 })

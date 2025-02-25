@@ -43,5 +43,5 @@ window.onload = function() {
 document.addEventListener("DOMContentLoaded",() => {
     $("html").css("overflow-x", "hidden")
     
-    if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
+    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
 })
