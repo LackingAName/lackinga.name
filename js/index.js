@@ -56,6 +56,7 @@ async function RefreshNavbar(Dir) {
         })
         await delay(100);
         $("#nav").children().each(function() {
+            if (this.nodeName == "DIV" || this.nodeName == "P") {return}
             this.remove()
         })
     }
@@ -63,6 +64,8 @@ async function RefreshNavbar(Dir) {
     $.getJSON("/nav/nav.json",function(data) {
         $.each(data[Level], function(key, value) {
             if (key == "index") {
+                console.log(document.getElementById("nav").innerHTML)
+                if (document.getElementById("nav").innerHTML.includes("b-0")) {return}
                 var div = document.createElement("div")
                 div.onclick = () => {location.href = value}
                 div.className = "item"
@@ -70,7 +73,6 @@ async function RefreshNavbar(Dir) {
 
                 var img = document.createElement("img")
                 img.src = "/images/lackingnamesthatb-0.png"
-                img.className = "item"
                 div.append(img)
                 /*
                 var dropdown = document.createElement("div")
@@ -93,6 +95,9 @@ async function RefreshNavbar(Dir) {
             }
         })
 
+        Nav = data
+
+        if (document.getElementById("nav").innerHTML.includes("arrow")) {return}
         var up = document.createElement("p")
         up.innerHTML = "⮝"
         up.className = "item arrow"
@@ -103,13 +108,11 @@ async function RefreshNavbar(Dir) {
         down.className = "item arrow"
         down.onclick = () => {LevelDown()}
         document.getElementById("nav").append(down)
-
-        Nav = data
     })
 
     await delay(100);
     $("#nav").children().each(function() {
-        this.style.transform = "translateY(0px)"
+        this.style = null
     })
 }
 

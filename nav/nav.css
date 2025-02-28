@@ -21,6 +21,11 @@
 
     transition: transform 0.1s;
 }
+#nav .item:hover {
+    transform: scale(1.1);
+
+    transition: transform 0.1s;
+}
 #nav a, #nav p {
     color: #000;
     font-size: 20px;
@@ -29,21 +34,9 @@
     
     transition: transform 0.1s;
 }
-#nav a:hover {
-    transform: scale(1.1);
-
-    transition: transform 0.1s;
-}
 #nav img {
     padding: 0 !important;
     height: 2em;
-
-    transition: transform 0.1s;
-}
-#nav img:hover {
-    transform: scale(1.1);
-
-    transition: transform 0.1s;
 }
 
 .arrow {
