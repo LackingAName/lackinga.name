@@ -1,4 +1,4 @@
-#naviframe {
+#nav {
     font-size: 16px;
     background: #fff;
     height: 2em;
@@ -6,21 +6,22 @@
     position: fixed;
     top: 0;
     z-index: 9999;
+    overflow: hidden;
 }
-#naviframeSpace {
-    height: 50px;
+#navpadding {
+    padding-bottom: 50px;
 }
-.nav .item {
+#nav .item {
     text-align: center;
     padding: 0.125em 20px;
     transform-origin: center center;
     display: flex;
-    float: left;
     cursor: pointer;
+    float: left;
 
     transition: transform 0.1s;
 }
-.nav a {
+#nav a, #nav p {
     color: #000;
     font-size: 20px;
     font-family: var(--font);
@@ -28,28 +29,30 @@
     
     transition: transform 0.1s;
 }
-.nav a:hover {
+#nav a:hover {
     transform: scale(1.1);
 
     transition: transform 0.1s;
 }
-
-.nav img {
+#nav img {
     padding: 0 !important;
     height: 2em;
 
     transition: transform 0.1s;
 }
-
-.nav img:hover {
+#nav img:hover {
     transform: scale(1.1);
 
     transition: transform 0.1s;
 }
+
+.arrow {
+    padding: 0.125em 5px !important;
+    float: right !important;
+}
 .item:hover .dropdown {
     display: block;
 }
-
 .dropdown {
     display: none;
     position: absolute;

@@ -1,4 +1,36 @@
-const delay = ms => new Promise(res => setTimeout(res, ms));
+const delay = ms => new Promise(res => setTimeout(res, ms))
+var Nav
+var Level = 1
+
+window.onload = function() {
+    $("html").css("overflow-x", "hidden")
+
+    var Favicon = top.document.createElement("link")
+    Favicon.rel = "icon"
+    Favicon.href = "/favicon.ico"
+    Favicon.type = "image/x-icon"
+    top.document.head.append(Favicon)
+
+    setInterval(ULGlitch,50)
+    if (document.body.id == "index") {LoadUser()}
+    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
+
+    if (document.cookie.includes("level")) {Level = Number(document.cookie.split("=")[1])}
+    RefreshNavbar(-1)
+    $(this).on("keypress",function(Input) {if (Input.key == "w") {LevelUp()} else if (Input.key == "s") {LevelDown()}})
+}
+
+// functions
+function LevelUp() {
+    if (Nav[Level + 1] == null) {return}
+    Level += 1
+    RefreshNavbar(1)
+}
+function LevelDown() {
+    if (Nav[Level - 1] == null) {return}
+    Level -= 1
+    RefreshNavbar(-1)
+}
 
 function LoadUser() {
     var UL = document.getElementById("UserLabel")
@@ -13,6 +45,72 @@ function LoadUser() {
     UL.style.fontFamily = "Roboto Mono"
     UL.style.cursor = null
     UL.onclick = null
+}
+
+async function RefreshNavbar(Dir) {
+    document.cookie = "level=" + Level
+    if (document.getElementById("nav").innerHTML != "") {
+        $("#nav").children().each(function() {
+            if (this.nodeName == "DIV" || this.nodeName == "P") {return}
+            this.style.transform = "translateY(calc(" + Dir + " * 30px))"
+        })
+        await delay(100);
+        $("#nav").children().each(function() {
+            this.remove()
+        })
+    }
+
+    $.getJSON("/nav/nav.json",function(data) {
+        $.each(data[Level], function(key, value) {
+            if (key == "index") {
+                var div = document.createElement("div")
+                div.onclick = () => {location.href = value}
+                div.className = "item"
+                document.getElementById("nav").append(div)
+
+                var img = document.createElement("img")
+                img.src = "/images/lackingnamesthatb-0.png"
+                img.className = "item"
+                div.append(img)
+                /*
+                var dropdown = document.createElement("div")
+                dropdown.className = "dropdown"
+                div.append(dropdown)
+
+                $.each(data[1].index, function(key, value) {
+                    var a = document.createElement("a")
+                    a.href = value
+                    a.innerHTML = key
+                    dropdown.append(a)
+                })*/
+            } else {
+                var a = document.createElement("a")
+                a.href = value
+                a.innerHTML = key
+                a.className = "item"
+                if (Nav) {a.style.transform = "translateY(calc(" + (Dir * -1) + " * 30px))"}
+                document.getElementById("nav").append(a)
+            }
+        })
+
+        var up = document.createElement("p")
+        up.innerHTML = "⮝"
+        up.className = "item arrow"
+        up.onclick = () => {LevelUp()}
+        document.getElementById("nav").append(up)
+        var down = document.createElement("p")
+        down.innerHTML = "⮟"
+        down.className = "item arrow"
+        down.onclick = () => {LevelDown()}
+        document.getElementById("nav").append(down)
+
+        Nav = data
+    })
+
+    await delay(100);
+    $("#nav").children().each(function() {
+        this.style.transform = "translateY(0px)"
+    })
 }
 
 var DoULGlitch = false
@@ -101,29 +199,3 @@ const ULGlitch = async () => {
     UL.onclick = () => {location.href = "/votv"}
     ULGlitchDebounce = false
 }
-
-window.onload = function() {
-    var Favicon = top.document.createElement("link")
-    Favicon.rel = "icon"
-    Favicon.href = "/favicon.ico"
-    Favicon.type = "image/x-icon"
-    top.document.head.appendChild(Favicon)
-
-    var nfs = top.document.createElement("div")
-    nfs.id = "naviframeSpace"
-    top.document.body.insertBefore(nfs,document.body.firstChild)
-    var nf = top.document.createElement("div")
-    nf.id = "naviframe"
-    top.document.body.insertBefore(nf,document.body.firstChild)
-    $(function() {$("#naviframe").load("html/nav.html")})
-    setInterval(ULGlitch,50)
-}
-
-document.addEventListener("DOMContentLoaded",() => {
-    $("html").css("overflow-x", "hidden")
-
-    $(function() {$("#naviframe").load("/html/nav.html")})
-
-    if (document.body.id == "index") {LoadUser()}
-    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
-})
