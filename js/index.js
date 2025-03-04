@@ -1,9 +1,12 @@
 const delay = ms => new Promise(res => setTimeout(res, ms))
 var Nav
 var Level = 1
+var DCSinterval
 
 window.onload = function() {
     $("html").css("overflow-x", "hidden")
+
+    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
 
     var Favicon = top.document.createElement("link")
     Favicon.rel = "icon"
@@ -11,12 +14,12 @@ window.onload = function() {
     Favicon.type = "image/x-icon"
     top.document.head.append(Favicon)
 
-    setInterval(ULGlitch,50)
-    if (document.body.id == "index") {LoadUser()}
-    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
+    if (document.body.id == "index") {LoadUser(); DCS();DCSinterval=setInterval(DCS,50)}
+    if (document.cookie.includes("level")) {Level = Number(document.cookie.split("level=")[1].split("")[0])}
 
-    if (document.cookie.includes("level")) {Level = Number(document.cookie.split("=")[1])}
     RefreshNavbar(-1)
+    setInterval(ULGlitch,50)
+    
     $(this).on("keypress",function(Input) {if (Input.key == "w") {LevelUp()} else if (Input.key == "s") {LevelDown()}})
 }
 
@@ -47,6 +50,24 @@ function LoadUser() {
     UL.onclick = null
 }
 
+function DCS() {
+    var Element = document.getElementById("DCS")
+
+    var t = new Date("2025-03-14 03:00:00") - new Date().getTime()
+    if (t < 0) {
+        Element.innerHTML = "it might be released rn"
+        clearInterval(DCSinterval)
+        return
+    }
+
+    var d = Math.floor(t / (1000 * 60 * 60 * 24))
+    var h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    var m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))
+    var s = Math.floor((t % (1000 * 60)) / 1000)
+
+    Element.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
+}
+
 async function RefreshNavbar(Dir) {
     document.cookie = "level=" + Level
     if (document.getElementById("nav").innerHTML != "") {
@@ -64,7 +85,6 @@ async function RefreshNavbar(Dir) {
     $.getJSON("/nav/nav.json",function(data) {
         $.each(data[Level], function(key, value) {
             if (key == "index") {
-                console.log(document.getElementById("nav").innerHTML)
                 if (document.getElementById("nav").innerHTML.includes("b-0")) {return}
                 var div = document.createElement("div")
                 div.onclick = () => {location.href = value}

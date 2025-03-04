@@ -4,10 +4,20 @@
         <meta charset="utf-8">
         <title>votv</title>
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="nav/nav.css">
         <script src="js/index.js"></script>
         <script type="module" src="/modules/jquery.js"></script>
     </head>
     <body id="./" style="background-image: url(images/yellow.png); background-size: cover; background-repeat: no-repeat; background-position: 50%;">
+        <div id="nav">
+            <div class="bar">
+                <img src="nav/inventory.png">
+                <img id="selected" src="nav/selected.png">
+            </div>
+            <div class="opts"></div>
+        </div>
+        <div id="navpadding"></div>
+
         <p>welcome to the "votv" folder, it's unique compared to the root folder</p>
         <p style="font-size: 20px; color: #888;">hotbar does work btw</p>
         <button onclick="ToggleSpoilers()">toggle spoilers</button>

@@ -1,11 +1,11 @@
-#naviframe {
+#nav {
     height: 85px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 9999;
 }
-#naviframeSpace {
+#navpadding {
     height: 100px;
 }
 .bar {
