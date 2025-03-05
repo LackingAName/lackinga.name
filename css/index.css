@@ -22,24 +22,6 @@
         background-position: 70% 0;
     }
 }
-@keyframes secretmove-right {
-    0% {
-        left: 50%;
-    }
-
-    100% {
-        left: 40.12%;
-    }
-}
-@keyframes secretmove-left {
-    0% {
-        left: 50%;
-    }
-
-    100% {
-        left: 59.88%;
-    }
-}
 
 :root {
     --font: "Roboto Mono";
@@ -154,10 +136,7 @@ video {
 }
 
 .linebreak {
-    color: #fff;
-    border-top: 5px;
-    border-top-style: solid;
-    display: table;
+    border-top: 5px solid #fff;
     width: 100%;
     margin-top: 40px;
 }
@@ -247,6 +226,19 @@ video {
     height: 256px;
     display: block;
     margin: auto;
+}
+#DCS, #DCS h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 999;
+}
+#DCS p {
+    padding-top: 10px;
+    font-size: 40px;
+}
+#DCSFSCI div {
+    transition: height 2s, bottom 2s;
 }
 
 .world {

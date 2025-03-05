@@ -8,5 +8,9 @@
         "index": "/",
         "caseoh": "/caseoh",
         "unicode": "/unicode"
+    },
+    "3": {
+        "index": "/",
+        "hi": "/"
     }
 }

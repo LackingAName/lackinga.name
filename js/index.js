@@ -6,7 +6,7 @@ var DCSinterval
 window.onload = function() {
     $("html").css("overflow-x", "hidden")
 
-    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")};
+    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")}
 
     var Favicon = top.document.createElement("link")
     Favicon.rel = "icon"
@@ -19,7 +19,7 @@ window.onload = function() {
 
     RefreshNavbar(-1)
     setInterval(ULGlitch,50)
-    
+
     $(this).on("keypress",function(Input) {if (Input.key == "w") {LevelUp()} else if (Input.key == "s") {LevelDown()}})
 }
 
@@ -50,12 +50,43 @@ function LoadUser() {
     UL.onclick = null
 }
 
+async function DCSFull() {
+    var CI = document.getElementById("DCSFSCI")
+    var DCS = document.getElementById("DCS").children[0]
+    var FST = document.getElementById("DCS").children[1]
+    var C = document.createElement("div")
+    FST.remove()
+    C.style = "background:#000;width:100%;height:0;position:relative;bottom:0;left:0;z-index:99;"
+    CI.append(C)
+    await delay(1)
+
+    var DelChildren = [...document.body.children]
+    async function Del() {
+        await delay(500)
+        for (let I = 0; I < DelChildren.length; I++) {
+            let Item = DelChildren[I]
+
+            if (Item.id == "DCS" || Item.id == "DCSFSCI" || Item.id == "nav" || Item.id == "navpadding") {continue}
+            Item.remove()
+            await delay(50)
+        }
+    }
+    C.style.height = "1500px"
+    C.style.bottom = "1500px"
+    Del()
+    await delay(1000)
+
+    DCS.style.transition = "font-size 1s"
+    DCS.style.fontSize = "200px"
+    DCS.style.paddingTop = "175px"
+}
+
 function DCS() {
-    var Element = document.getElementById("DCS")
+    var DCS = document.getElementById("DCS").children[0]
 
     var t = new Date("2025-03-14T00:00:00-08:00") - new Date()
     if (t < 0) {
-        Element.innerHTML = "it might be released rn"
+        DCS.innerHTML = "it might be released rn"
         clearInterval(DCSinterval)
         return
     }
@@ -65,7 +96,7 @@ function DCS() {
     var m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))
     var s = Math.floor((t % (1000 * 60)) / 1000)
 
-    Element.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
+    DCS.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
 }
 
 async function RefreshNavbar(Dir) {
@@ -75,7 +106,7 @@ async function RefreshNavbar(Dir) {
             if (this.nodeName == "DIV" || this.nodeName == "P") {return}
             this.style.transform = "translateY(calc(" + Dir + " * 30px))"
         })
-        await delay(100);
+        await delay(100)
         $("#nav").children().each(function() {
             if (this.nodeName == "DIV" || this.nodeName == "P") {return}
             this.remove()
@@ -130,7 +161,7 @@ async function RefreshNavbar(Dir) {
         document.getElementById("nav").append(down)
     })
 
-    await delay(100);
+    await delay(100)
     $("#nav").children().each(function() {
         this.style = null
     })
@@ -213,10 +244,10 @@ const ULGlitch = async () => {
 
     UL.style.transform = Transform
 
-    await delay(1);
+    await delay(1)
     UL.innerHTML = "23"
     UL.style.color = "#fff"
-    UL.style.transform = "none";
+    UL.style.transform = "none"
     UL.style.fontFamily = "Share-TechMono"
     UL.style.cursor = "pointer"
     UL.onclick = () => {location.href = "/votv"}
