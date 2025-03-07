@@ -7,7 +7,8 @@ var DCSCD
 window.onload = function() {
     $("html").css("overflow-x", "hidden")
 
-    //if (document.body.id == "404" && !location.href.endsWith(".html")) {location.href = (location.href + ".html")}
+    var path = document.location.pathname.split("/").pop().split(".")
+    if (document.location.hostname == "localhost" && path.length == 1 && path[0].length > 0) {location.href += ".html"}
 
     var Favicon = top.document.createElement("link")
     Favicon.rel = "icon"

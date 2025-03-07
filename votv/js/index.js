@@ -30,7 +30,7 @@ function COOKIE() {
     if (document.cookie.includes("spoilers=0")) {
         document.body.style.backgroundImage = null
         if (document.body.id == "ss") {
-            document.body.innerHTML = "<p>basically this whole page has spoilers</p>"
+            document.body.innerHTML = document.body.innerHTML.split("<div class=\"list\">")[0] + "<p>basically this whole page has spoilers</p>"
         }
     }
     document.documentElement.style.setProperty("--selectedOffset", Math.abs(85 * (Pages.indexOf(document.body.id))) + "px")
