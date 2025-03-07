@@ -2,6 +2,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms))
 var Nav
 var Level = 1
 var DCSinterval
+var DCSCD
 
 window.onload = function() {
     $("html").css("overflow-x", "hidden")
@@ -14,7 +15,8 @@ window.onload = function() {
     Favicon.type = "image/x-icon"
     top.document.head.append(Favicon)
 
-    if (document.body.id == "index") {LoadUser(); DCS();DCSinterval=setInterval(DCS,50)}
+    if (document.body.id == "index") {LoadUser();DCSCD = document.getElementById("DCS").children[0];DCS();DCSinterval=setInterval(DCS,50)}
+    if (document.body.id == "hi") {DCSCD = document.getElementById("wth");DCS();DCSinterval=setInterval(DCS,50)}
     if (document.cookie.includes("level")) {Level = Number(document.cookie.split("level=")[1].split("")[0])}
 
     RefreshNavbar(-1)
@@ -52,8 +54,8 @@ function LoadUser() {
 
 async function DCSFull() {
     var CI = document.getElementById("DCSFSCI")
-    var DCS = document.getElementById("DCS").children[0]
-    var FST = document.getElementById("DCS").children[1]
+    var DCS = document.getElementById("DCS")
+    var FST = DCS.children[1]
     var C = document.createElement("div")
     FST.remove()
     C.style = "background:#000;width:100%;height:0;position:relative;bottom:0;left:0;z-index:99;"
@@ -76,17 +78,14 @@ async function DCSFull() {
     Del()
     await delay(1000)
 
-    DCS.style.transition = "font-size 1s"
-    DCS.style.fontSize = "200px"
-    DCS.style.paddingTop = "175px"
+    DCSCD.style = "transition: font-size 1s; font-size: 15vw;"
+    DCS.style = "position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%;"
 }
 
 function DCS() {
-    var DCS = document.getElementById("DCS").children[0]
-
     var t = new Date("2025-03-14T00:00:00-08:00") - new Date()
     if (t < 0) {
-        DCS.innerHTML = "it might be released rn"
+        DCSCD.innerHTML = "it might be released rn"
         clearInterval(DCSinterval)
         return
     }
@@ -96,7 +95,7 @@ function DCS() {
     var m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))
     var s = Math.floor((t % (1000 * 60)) / 1000)
 
-    DCS.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
+    DCSCD.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
 }
 
 async function RefreshNavbar(Dir) {
