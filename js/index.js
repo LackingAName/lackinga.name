@@ -84,7 +84,7 @@ async function DCSFull() {
 }
 
 function DCS() {
-    var t = new Date("2025-03-14T00:00:00-08:00") - new Date()
+    var t = new Date("2025-03-14T00:00:00-07:00") - new Date()
     if (t < 0) {
         DCSCD.innerHTML = "it might be released rn"
         clearInterval(DCSinterval)
