@@ -1,8 +1,6 @@
 const delay = ms => new Promise(res => setTimeout(res, ms))
 var Nav
 var Level = 1
-var DCSinterval
-var DCSCD
 
 window.onload = function() {
     $("html").css("overflow-x", "hidden")
@@ -16,8 +14,7 @@ window.onload = function() {
     Favicon.type = "image/x-icon"
     top.document.head.append(Favicon)
 
-    if (document.body.id == "index") {LoadUser();DCSCD = document.getElementById("DCS").children[0];DCS();DCSinterval=setInterval(DCS,50)}
-    if (document.body.id == "hi") {DCSCD = document.getElementById("wth");DCS();DCSinterval=setInterval(DCS,50)}
+    if (document.body.id == "index") {LoadUser()}
     if (document.cookie.includes("level")) {Level = Number(document.cookie.split("level=")[1].split("")[0])}
 
     RefreshNavbar(-1)
@@ -81,22 +78,6 @@ async function DCSFull() {
 
     DCSCD.style = "transition: font-size 1s; font-size: 15vw;"
     DCS.style = "position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%;"
-}
-
-function DCS() {
-    var t = new Date("2025-03-14T00:00:00-07:00") - new Date()
-    if (t < 0) {
-        DCSCD.innerHTML = "it might be released rn"
-        clearInterval(DCSinterval)
-        return
-    }
-
-    var d = Math.floor(t / (1000 * 60 * 60 * 24))
-    var h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-    var m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60))
-    var s = Math.floor((t % (1000 * 60)) / 1000)
-
-    DCSCD.innerHTML = `${d < 10 ? "0" + d : d}:${h < 10 ? "0" + h : h}:${m < 10 ? "0" + m : m}:${s < 10 ? "0" + s : s}`
 }
 
 async function RefreshNavbar(Dir) {
