@@ -37,7 +37,7 @@ function LevelDown() {
 
 function LoadUser() {
     var UL = document.getElementById("UserLabel")
-    var Random = (Math.floor(Math.random() * Math.floor(23)) + 1)
+    var Random = (Math.floor(Math.random() * Math.floor(25)) + 1)
     if (Random == UL.innerHTML) {Random += 1}
     document.getElementById("User").src = "images/User/" + Random + ".png"
     UL.innerHTML = Random
