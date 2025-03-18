@@ -258,9 +258,20 @@ video {
 .world div p {
     text-align: left;
 }
+.world .d {
+    color: #888;
+}
 .worldImg {
     aspect-ratio: 4 / 3;
     height: 300px;
+}
+w-r {
+    color: #f00;
+    padding-left: 20px;
+}
+w-g {
+    color: #0f0;
+    padding-left: 20px;
 }
 .groupImg {
     aspect-ratio: 1 / 1;
