@@ -37,7 +37,7 @@ function LevelDown() {
 
 function LoadUser() {
     var UL = document.getElementById("UserLabel")
-    var Random = (Math.floor(Math.random() * Math.floor(27)) + 1)
+    var Random = (Math.floor(Math.random() * Math.floor(30)) + 1)
     if (Random == UL.innerHTML) {Random += 1}
     document.getElementById("User").src = "images/User/" + Random + ".png"
     UL.innerHTML = Random
@@ -48,36 +48,6 @@ function LoadUser() {
     UL.style.fontFamily = "Roboto Mono"
     UL.style.cursor = null
     UL.onclick = null
-}
-
-async function DCSFull() {
-    var CI = document.getElementById("DCSFSCI")
-    var DCS = document.getElementById("DCS")
-    var FST = DCS.children[1]
-    var C = document.createElement("div")
-    FST.remove()
-    C.style = "background:#000;width:100%;height:0;position:relative;bottom:0;left:0;z-index:99;"
-    CI.append(C)
-    await delay(1)
-
-    var DelChildren = [...document.body.children]
-    async function Del() {
-        await delay(500)
-        for (let I = 0; I < DelChildren.length; I++) {
-            let Item = DelChildren[I]
-
-            if (Item.id == "DCS" || Item.id == "DCSFSCI" || Item.id == "nav" || Item.id == "navpadding") {continue}
-            Item.remove()
-            await delay(50)
-        }
-    }
-    C.style.height = "1500px"
-    C.style.bottom = "1500px"
-    Del()
-    await delay(1000)
-
-    DCSCD.style = "transition: font-size 1s; font-size: 15vw;"
-    DCS.style = "position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%;"
 }
 
 async function RefreshNavbar(Dir) {
