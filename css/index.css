@@ -250,7 +250,7 @@ video {
     margin: 0;
     text-align: left;
 }
-.world h1 {
+.world a, .world h1 {
     font-size: 40px;
     margin: 0;
     text-align: left;
@@ -281,7 +281,7 @@ w-g {
     width: 100%;
     background-size: contain;
 }
-.groupInfoDiv p, h1 {
+.groupInfoDiv p, .groupInfoDiv h1, .groupInfoDiv a {
     background-color: rgba(0,0,0,0.5);
     white-space: nowrap;
 }

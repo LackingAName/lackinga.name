@@ -1,0 +1,304 @@
+/* all of this is a mess do not look at it pls */
+
+* {
+    box-sizing: border-box;
+}
+.WorldGrid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    display: grid;
+    column-gap: 0.5rem;
+    font-size: 1rem !important;
+    margin: 1.5rem;
+}
+.World {
+    display: flex;
+    margin-bottom: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgb(24,27,31);
+    transition: border-color 0.2s ease-in-out;
+    overflow: visible;
+}
+.WorldDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+    background-color: rgb(37,42,48);
+    border-color: rgb(37,42,48);
+    border-style: solid;
+    border-width: 3px 3px 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+.WorldImage {
+    padding-top: 75%;
+    height: 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: none;
+}
+.WorldDetails img {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 8px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.WorldPlatforms {
+    color: #fff !important;
+    padding: 0.5rem !important;
+    background-color: rgba(24,27,31,0.4) !important;
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+    gap: 0.25rem !important;
+    flex-direction: row !important;
+    display: flex !important;
+    z-index: 2 !important;
+    top: 0px !important;
+    right: 0px !important;
+    position: absolute !important;
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
+
+    backdrop-filter: blur(8px) saturate(2) !important;
+}
+.World:hover .WorldPlatforms {
+    background-color: rgba(24,27,31,0.8) !important;
+}
+.WorldPlatforms .PC {color: rgb(23,120,255);border-color: currentColor !important;}
+.WorldPlatforms .A {color: rgb(43,207,92);border-color: currentColor !important;}
+.WorldPlatforms div {
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 9999px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    display: flex !important;
+}
+.WorldPlatforms svg {
+    overflow: visible;
+    box-sizing: content-box;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125em !important;
+    overflow-clip-margin: content-box;
+    color: currentColor;
+}
+.WorldImageBorder {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    z-index: 1;
+    border-radius: 8px;
+    border: 4px solid rgba(255, 255, 255, 0.184);
+}
+.WorldImageBorder div {
+    padding: 0.2rem 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.Private {border: 4px solid rgba(239, 54, 54, 0.624);}
+.Private div {background-color: rgba(239, 54, 54, 0.624);}
+.Labs {border: 4px solid rgba(47,184,29,0.624);}
+.Labs div {background-color: rgba(47, 184, 29, 0.624);}
+.WorldName {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.WorldName a {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(14, 155, 177);
+    outline: none !important;
+    text-decoration: none;
+}
+.WorldName h4 {
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+    word-break: break-all;
+    text-align: left;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.1;
+}
+.WorldCaption {
+    color: #888;
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.GroupGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 1.5rem;
+    font-size: 1rem !important;
+}
+.Group {
+    display: flex;
+    margin-bottom: 0.8rem;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 0px;
+    text-decoration: none !important;
+    color: rgba(14,155,177,1);
+}
+.GroupTop {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    background-color: rgb(37, 42, 48);
+    border-color: rgb(37, 42, 48);
+    border-style: solid;
+    border-width: 3px 3px 0px;
+}
+.GroupBanner {
+    padding-top: 35%;
+    height: 0px;
+    overflow: visible;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+}
+.GroupBannerImage {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 8px;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.GroupIcon {
+    position: absolute;
+    bottom: -32px;
+    margin-left: 13px;
+}
+.GroupIcon img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 3px solid rgb(24,27,31);
+    background-color: rgb(24,27,31);
+    max-width: 100%;
+    vertical-align: middle;
+}
+.GroupName {
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    display: flex !important;
+    font-size: initial;
+}
+.GroupName button {
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px 0px 10px 100px;
+    color: rgb(14, 155, 177);
+    min-width: 0px;
+    outline: none !important;
+    text-transform: none;
+    border-radius: 0;
+    font-size: initial;
+    text-align: left;
+    width: 100%;
+}
+.GroupName h4 {
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 1.1;
+}
+.GroupBottom {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 5px;
+    background-color: rgb(24, 27, 31);
+    border-color: rgb(24, 27, 31);
+    border-width: 0px 3px 3px;
+    border-radius: 0px 0px 8px 8px;
+    height: auto;
+    overflow: hidden;
+    color: rgb(115, 115, 114);
+    transition: max-height 0.1s ease-in;
+}
+.GroupDetails {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.GroupDetails p {
+    font-size: 0.8rem;
+    color: rgb(115, 115, 114);
+}
+.GroupDescription {
+    text-align: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    display: flex !important;
+    margin-bottom: 1rem;
+}
+.GroupTag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+}
