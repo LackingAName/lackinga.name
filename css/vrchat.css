@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .WorldGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4,1fr);
     margin-top: 10px;
     display: grid;
     column-gap: 0.5rem;
@@ -166,7 +166,7 @@
 
 .GroupGrid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 10px;
     margin: 1.5rem;
     font-size: 1rem !important;
