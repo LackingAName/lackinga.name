@@ -316,28 +316,29 @@ w-g {
     font-size: 35px;
 }
 
-/* unicode */
-.usection {
-    margin-left: 60px;
+/* non */
+.nongrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
 }
-.usection h1 {
-    text-align: left;
-    font-size: 50px;
+.nongrid div {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    height: 100%;
+    color: #fff;
 }
-.usection table {
-    border-collapse: collapse;
+.nongrid img {
+    object-fit: contain;
+    width: 100%;
+    height: 90%;
+    -webkit-user-drag: element !important;
 }
-.usection th, .usection td {
-    text-align: center;
+.ha {
     color: white;
-    font-size: 20px;
-    font-family: "Roboto Mono";
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid white;
-    padding: 10px 10px;
-}
-.usidebyside {
-    display: flex;
-    gap: 10px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    letter-spacing: -0.2em;
+    font-size: 30px;
 }
