@@ -321,6 +321,7 @@ w-g {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin: 10px;
+    color: #fff;
 }
 .nongrid div {
     aspect-ratio: 1 / 1;
@@ -335,7 +336,7 @@ w-g {
     -webkit-user-drag: element !important;
 }
 .ha {
-    color: white;
+    color: #fff;
     width: 100%;
     text-align: center;
     margin: auto;
