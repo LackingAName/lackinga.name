@@ -46,7 +46,7 @@ function RefreshNavbar() {
 
             if (key == "root") {
                 var img = document.createElement("img")
-                img.src = "/images/lackingnamesthatb-1.png"
+                img.src = "/images/lackingnamesthatb-1.webp"
                 img.className = "item"
                 div.append(img)
             } else {

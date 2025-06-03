@@ -51,10 +51,12 @@ function LoadUser() {
         this.remove()
     })
 
+    var Max = 30
+
     var UL = document.getElementById("UserLabel")
     var User = document.getElementById("User")
-    var Random = (Math.floor(Math.random() * Math.floor(30)) + 1)
-    if (Random == UL.innerHTML) {Random += 1}
+    var Random = (Math.floor(Math.random() * Math.floor(Max)) + 1)
+    if (Random == UL.innerHTML && (Random + 1) <= Max) {Random += 1} else if (Random == UL.innerHTML) {Random -= 1}
     User.src = "images/User/Input/" + Random + ".webp"
     UL.innerHTML = Random
 
@@ -101,7 +103,7 @@ async function RefreshNavbar(Dir) {
                 document.getElementById("nav").append(div)
 
                 var img = document.createElement("img")
-                img.src = "/images/lackingnamesthatb-0.png"
+                img.src = "/images/lackingnamesthatb-0.webp"
                 div.append(img)
                 /*
                 var dropdown = document.createElement("div")
