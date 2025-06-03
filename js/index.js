@@ -24,6 +24,15 @@ window.onload = function() {
 }
 
 // functions
+function Check(URL) {
+    return new Promise(Resolve => {
+        var Img = new Image()
+        Img.addEventListener("load",() => Resolve(true))
+        Img.addEventListener("error",() => Resolve(false))
+        Img.src = URL
+    })
+} 
+
 function LevelUp() {
     if (Nav[Level + 1] == null) {return}
     Level += 1
@@ -36,11 +45,29 @@ function LevelDown() {
 }
 
 function LoadUser() {
+    var UC = document.getElementById("UserContainer")
+    $("#UserContainer").children().each(function() {
+        if (this.className != "Detection") {return}
+        this.remove()
+    })
+
     var UL = document.getElementById("UserLabel")
+    var User = document.getElementById("User")
     var Random = (Math.floor(Math.random() * Math.floor(30)) + 1)
     if (Random == UL.innerHTML) {Random += 1}
-    document.getElementById("User").src = "images/User/" + Random + ".png"
+    User.src = "images/User/Input/" + Random + ".webp"
     UL.innerHTML = Random
+
+    for (let I = 0; I < 10; I++) {
+        Check("images/User/Output/" + Random + "-" + I + ".webp").then(Value => {
+            if (!Value) return
+            var Detection = document.createElement("img")
+            Detection.className = "Detection"
+            Detection.src = "images/User/Output/" + Random + "-" + I + ".webp"
+            Detection.style = "animation: Delay " + Math.floor(Math.random() * (50 - 5) + 5) / 100 + "s linear forwards;"
+            UC.append(Detection)
+        })
+    }
 
     DoULGlitch = (Random == 23)
     UL.style.color = "#fff"
