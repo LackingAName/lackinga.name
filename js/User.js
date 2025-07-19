@@ -8,10 +8,8 @@ var Drag;
 var UC;
 var UL;
 var User;
-window.onload = function() {
+document.addEventListener("DOMContentLoaded",() => {
     if (document.body.id == "index") {
-        LoadUser()
-
         Drag = document.createElement("img")
         Drag.src = "images/User/Drag.webp"
         Drag.style.width = "100px"
@@ -19,10 +17,7 @@ window.onload = function() {
         Drag.style.position = "absolute"
         Drag.style.display = "none"
         document.body.append(Drag)
-    }
-}
-document.addEventListener("DOMContentLoaded",() => {
-    if (document.body.id == "index") {
+
         var UserButton = document.getElementById("UserButton")
         UserButton.addEventListener("mousedown",(Event) => UserHandler(1,Event))
         UserButton.addEventListener("mousemove",(Event) => UserHandler(2,Event))
@@ -32,6 +27,8 @@ document.addEventListener("DOMContentLoaded",() => {
         UC = document.getElementById("UserContainer");
         UL = document.getElementById("UserLabel");
         User = document.getElementById("User");
+
+        LoadUser()
     }
 })
 
