@@ -13,25 +13,7 @@ window.onload = function() {
     Favicon.href = "/favicon.ico"
     Favicon.type = "image/x-icon"
     top.document.head.append(Favicon)
-
-    if (document.body.id == "index") {
-        LoadUser()
-
-        var UserButton = document.getElementById("UserButton")
-        UserButton.addEventListener("mousedown",(Event) => UserHandler(1,Event))
-        UserButton.addEventListener("mousemove",(Event) => UserHandler(2,Event))
-        UserButton.addEventListener("mouseup",(Event) => UserHandler(0,Event))
-        UserButton.addEventListener("mouseleave",(Event) => UserHandler(0,Event))
-
-        /*Drag = document.createElement("img")
-        Drag.src = "images/User/Drag.webp"
-        Drag.style.width = "100px"
-        Drag.style.height = "100px"
-        Drag.style.position = "absolute"
-        Drag.style.display = "none"
-        document.body.append(Drag)
-        UserCH = document.getElementById("UserCH").children[0]*/
-    }
+    
     if (document.cookie.includes("level")) {Level = Number(document.cookie.split("level=")[1].split("")[0])}
 
     RefreshNavbar(-1)
@@ -59,75 +41,6 @@ function LevelDown() {
     if (Nav[Level - 1] == null) {return}
     Level -= 1
     RefreshNavbar(-1)
-}
-
-var CH = 1
-var MouseState = 0
-var Drag
-var UserCH
-function UserHandler(State,Event) {
-    //if (State < 2) MouseState = State
-    if (State == 0 && Event.type == "mouseup") LoadUser()
-    /*if (State == 0) Drag.style.display = "none"
-
-    DragUpdate(Event.pageX,Event.pageY,Event.movementX,Event.movementY)
-
-    if (MouseState != 1 || State != 2) return
-    if (Event.movementX < 0 && (CH - 1) >= 1) CH -= 1
-    if (Event.movementX > 0 && (CH + 1) <= 2) CH += 1
-    Drag.style.display = "block"
-    UserCH.style.transform = "translateX(-" + 65 * (CH - 1) + "%)"*/
-}
-var LastAngle = 0
-function DragUpdate(x,y,vx,vy) {
-    if (vx == 0 && vy == 0) return
-
-    var Deg = Math.atan2(vy,vx) * (180 / Math.PI)
-    if (Deg < 0) Deg += 360
-    var AngleDiff = Deg - LastAngle
-    if (AngleDiff > 180) AngleDiff -= 360
-    if (AngleDiff < -180) AngleDiff += 360
-    LastAngle += AngleDiff * 0.3
-
-    Drag.style.left = (x - 50) + "px"
-    Drag.style.top = (y - 50) + "px"
-    Drag.style.transform = "rotate(" + LastAngle + "deg)"
-}
-function LoadUser() {
-    var UC = document.getElementById("UserContainer")
-    var UL = document.getElementById("UserLabel")
-    var User = document.getElementById("User")
-
-    $("#UserContainer").children().each(function() {
-        if (this.className != "Detection") {return}
-        this.remove()
-    })
-
-    var Max = CH == 1 ? 30 : 3
-    var Random = (Math.floor(Math.random() * Math.floor(Max)) + 1)
-    if (Random == UL.innerHTML && (Random + 1) <= Max) Random += 1
-    else if (Random == UL.innerHTML && (Random - 1) >= 1) Random -= 1
-
-    User.src = "images/User/CH" + CH + "/Input/" + Random + ".webp"
-    UL.innerHTML = Random
-
-    for (let I = 0; I < 10; I++) {
-        Check("images/User/CH" + CH + "/Output/" + Random + "-" + I + ".webp").then(Value => {
-            if (!Value) return
-            var Detection = document.createElement("img")
-            Detection.className = "Detection"
-            Detection.src = "images/User/CH" + CH + "/Output/" + Random + "-" + I + ".webp"
-            Detection.style = "animation: Delay " + Math.floor(Math.random() * (50 - 5) + 5) / 100 + "s linear forwards;"
-            UC.append(Detection)
-        })
-    }
-
-    DoULGlitch = (Random == 23)
-    UL.style.color = "#fff"
-    UL.style.transform = "none"
-    UL.style.fontFamily = "Roboto Mono"
-    UL.style.cursor = null
-    UL.onclick = null
 }
 
 async function RefreshNavbar(Dir) {
