@@ -85,7 +85,20 @@
     border-color: rgb(5,77,94);
 }
 .WorldPlatforms .PC {color: rgb(23,120,255);border-color: currentColor !important;}
+.PC svg path {
+    fill: currentColor;
+    d: path("M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z");
+}
 .WorldPlatforms .A {color: rgb(43,207,92);border-color: currentColor !important;}
+.A svg {
+    transform-origin: left;
+    transform: scale(0.88888888888);
+}
+.A svg path {
+    fill: currentColor;
+    d: path("M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55");
+}
+
 .WorldPlatforms div {
     border-style: solid !important;
     border-width: 1px !important;
