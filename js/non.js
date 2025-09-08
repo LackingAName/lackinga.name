@@ -1,12 +1,18 @@
-document.addEventListener("DOMContentLoaded",() => {
+document.addEventListener("DOMContentLoaded",function() {
     $(".nongrid div").each(function() {
-        var This = this
-        var URL = This.children[0].src.slice(0,-5) + "base.webp"
+        const URL = this.children[0].src.slice(0,-5) + "base.webp";
 
-        var Req = new XMLHttpRequest();
-        Req.open("GET",URL,false)
-        Req.send()
-
-        if (Req.responseText.includes("WEBP")) This.innerHTML += "<br><span style='cursor:pointer;' onclick=\"window.open('" + URL + "','_blank');\"><b>view base</span>"
+        const XHR = new XMLHttpRequest();
+        XHR.open("GET",URL,true);
+        XHR.onload = () => {
+            if (XHR.responseText.includes("WEBP")) {
+                this.innerHTML += Add(URL);
+            }
+        }
+        XHR.send();
     });
 })
+
+function Add(URL) {
+    return "<br><span style='cursor:pointer;' onclick=\"window.open('" + URL + "','_blank');\"><b>view base</span>";
+}
