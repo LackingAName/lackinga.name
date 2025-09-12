@@ -5,7 +5,7 @@
         <meta name="robots" content="noindex">
         <title>404</title>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="nav/nav.css">
+        <link rel="stylesheet" href="css/nav.css">
         <script src="/js/shared.js"></script>
         <script src="js/local.js"></script>
         <script type="module" src="/modules/jquery.js"></script>
@@ -14,9 +14,11 @@
         <div id="nav"></div>
         <div id="navpadding"></div>
 
-        <h1 id="error">404</h1>
-        <p>where u goin</p>
-        <button onclick="if (document.referrer != '') {location.href = document.referrer} else {this.innerHTML = 'no referrer'; this.style.background = '#f00'; this.style.color = '#fff'; this.style.cursor = 'default'}">return</button>
-        <button onclick="location.href = './'">index</button>
+        <div id="Container">
+            <h1 id="error">404</h1>
+            <p>where u goin</p>
+            <button onclick="if (document.referrer != '') {location.href = document.referrer} else {this.innerHTML = 'no referrer'; this.style.background = '#f00'; this.style.color = '#fff'; this.style.cursor = 'default'}">return</button>
+            <button onclick="location.href = './'">index</button>
+        </div>
     </body>
 </html>

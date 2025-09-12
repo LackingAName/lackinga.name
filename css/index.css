@@ -38,6 +38,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     background-color: #000;
@@ -66,59 +67,45 @@ body {
 
 a, h1, h2, h3, p, button {
     user-select: none;
+    text-align: center;
+    font-family: var(--font);
+}
+a, h1, h2, h3, p {
+    margin: 0;
 }
 
 a {
-    text-align: center;
     color: #0080ff;
-    font-family: var(--font);
     font-weight: 500;
     font-size: 40px;
-    display: block;
-    margin: 0;
 }
 h1 {
-    text-align: center;
     color: #fff;
-    font-family: var(--font);
     font-weight: 1000;
     font-size: 80px;
-    margin: 0;
 }
 h2 {
-    text-align: center;
     color: #fff;
-    font-family: var(--font);
     font-weight: 1000;
     font-size: 40px;
-    margin: 0;
 }
 h3 {
-    text-align: center;
     color: #fff;
-    font-family: var(--font);
     font-weight: 700;
     font-size: 20px;
-    margin: 0;
 }
 p {
-    text-align: center;
     color: #fff;
-    font-family: var(--font);
     font-weight: 500;
     font-size: 40px;
-    margin: 0;
 }
 button {
-    text-align: center;
     color: #000;
-    font-family: var(--font);
     font-weight: 500;
     font-size: 20px;
     border: 0;
     width: 20ex;
     height: 2em;
-    user-select: none;
     cursor: pointer;
     display: block;
     margin: auto;
@@ -132,6 +119,14 @@ video {
     display: block;
 }
 
+#Container {
+    margin: 25px;
+    outline: 5px solid #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
+}
+
 #error {
     font-size: 100px;
     letter-spacing: 10vw;
@@ -141,7 +136,8 @@ video {
 .linebreak {
     border-top: 5px solid #fff;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .rgbtext {

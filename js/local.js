@@ -1,96 +1,42 @@
-const delay = ms => new Promise(res => setTimeout(res, ms))
-var Nav
-var Level = 1
-
-// functions
-function LevelUp() {
-    if (Nav[Level + 1] == null) {return}
-    Level += 1
-    RefreshNavbar(1)
-}
-function LevelDown() {
-    if (Nav[Level - 1] == null) {return}
-    Level -= 1
-    RefreshNavbar(-1)
-}
+const Delay = ms => new Promise(Handler => setTimeout(Handler, ms))
 
 // main
 document.addEventListener("DOMContentLoaded",function() {
-    if (document.cookie.includes("level")) {Level = Number(document.cookie.split("level=")[1].split("")[0])}
-
-    RefreshNavbar(-1)
     setInterval(ULGlitch,50)
 
-    $(this).on("keypress",function(Input) {if (Input.key == "w") {LevelUp()} else if (Input.key == "s") {LevelDown()}})
-})
-
-async function RefreshNavbar(Dir) {
-    document.cookie = "level=" + Level
-    if (document.getElementById("nav").innerHTML != "") {
-        $("#nav").children().each(function() {
-            if (this.nodeName == "DIV" || this.nodeName == "P") {return}
-            this.style.transform = "translateY(calc(" + Dir + " * 30px))"
-        })
-        await delay(100)
-        $("#nav").children().each(function() {
-            if (this.nodeName == "DIV" || this.nodeName == "P") {return}
-            this.remove()
-        })
-    }
-
-    $.getJSON("/nav/nav.json",function(data) {
-        $.each(data[Level], function(key, value) {
-            if (key == "index") {
+    $.getJSON("/json/nav.json",function(Data) {
+        $.each(Data, function(Key, Value) {
+            if (Key == "index") {
                 if (document.getElementById("nav").innerHTML.includes("b-0")) {return}
                 var div = document.createElement("div")
-                div.onclick = () => {location.href = value}
-                div.className = "item"
-                document.getElementById("nav").append(div)
+                div.onclick = () => {location.href = Value}
+                div.className = "index item"
+                document.getElementById("nav").prepend(div)
 
                 var img = document.createElement("img")
                 img.src = "/images/lackingnamesthatb-0.webp"
-                div.append(img)
+                div.prepend(img)
                 /*
                 var dropdown = document.createElement("div")
                 dropdown.className = "dropdown"
-                div.append(dropdown)
+                div.prepend(dropdown)
 
-                $.each(data[1].index, function(key, value) {
+                $.each(data[1].index, function(Key, Value) {
                     var a = document.createElement("a")
-                    a.href = value
-                    a.innerHTML = key
-                    dropdown.append(a)
+                    a.href = Value
+                    a.innerHTML = Key
+                    dropdown.prepend(a)
                 })*/
             } else {
                 var a = document.createElement("a")
-                a.href = value
-                a.innerHTML = key
+                a.href = Value
+                a.innerHTML = Key
                 a.className = "item"
-                if (Nav) {a.style.transform = "translateY(calc(" + (Dir * -1) + " * 30px))"}
-                document.getElementById("nav").append(a)
+                document.getElementById("nav").prepend(a)
             }
         })
-
-        Nav = data
-
-        if (document.getElementById("nav").innerHTML.includes("arrow")) {return}
-        var up = document.createElement("p")
-        up.innerHTML = "⮝"
-        up.className = "item arrow"
-        up.onclick = () => {LevelUp()}
-        document.getElementById("nav").append(up)
-        var down = document.createElement("p")
-        down.innerHTML = "⮟"
-        down.className = "item arrow"
-        down.onclick = () => {LevelDown()}
-        document.getElementById("nav").append(down)
     })
-
-    await delay(100)
-    $("#nav").children().each(function() {
-        this.style = null
-    })
-}
+})
 
 var DoULGlitch = false
 var ULGlitchDebounce = false
@@ -169,7 +115,7 @@ const ULGlitch = async () => {
 
     UL.style.transform = Transform
 
-    await delay(1)
+    await Delay(1)
     UL.innerHTML = "23"
     UL.style.color = "#fff"
     UL.style.transform = "none"

@@ -1,0 +1,202 @@
+[
+    {
+        "world": [
+            {
+                "Name": "LackingAName's Random Avatars",
+                "Description": "obsolete",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_4aedce95-70d2-4853-8359-da34527e105e.png",
+                "URL": "https://vrchat.com/home/world/wrld_4aedce95-70d2-4853-8359-da34527e105e",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "Baked Lighting Test",
+                "Description": "(2024 remaster — from 2021)",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_8af1a88a-30d8-4ea7-835e-677eefc05ae6.png",
+                "URL": "https://vrchat.com/home/world/wrld_8af1a88a-30d8-4ea7-835e-677eefc05ae6",
+                "Visibility": "Published to Labs",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "beanworld",
+                "Description": "(2024 remaster — from 2021)",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_cf26fb44-8345-4628-997a-4dfeac9e58cb.png",
+                "URL": "https://vrchat.com/home/world/wrld_cf26fb44-8345-4628-997a-4dfeac9e58cb",
+                "Visibility": "Published to Labs",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "floating island",
+                "Description": "one day",
+                "Image": "/images/vrchat/w4.webp",
+                "URL": "https://vrchat.com/home/world/wrld_287a9172-bac4-4b30-9d51-a573bc169fb3",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "lackinganame's avatars",
+                "Description": "yea",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_7523f12f-6f83-4a55-8aa5-12cc78e8dacc.png",
+                "URL": "https://vrchat.com/home/world/wrld_7523f12f-6f83-4a55-8aa5-12cc78e8dacc",
+                "Visibility": "",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "homeLocation",
+                "Description": "old home world",
+                "Image": "/images/vrchat/w6.webp",
+                "URL": "https://vrchat.com/home/world/wrld_9fb333e9-e6b5-4e10-9fad-4d5966511bb5",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "The Nothing",
+                "Description": "if only it was real; made for a friend that imploded",
+                "Image": "/images/vrchat/w7.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "Cry of Fear - Simon's Apartment",
+                "Description": "someone else did this and it was so bad that it inspired me (sorry)",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_772a49ca-5b69-41c5-af97-c8abad0b7aaa.png",
+                "URL": "https://vrchat.com/home/world/wrld_772a49ca-5b69-41c5-af97-c8abad0b7aaa",
+                "Visibility": "",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "Bortom den Andra Sidan",
+                "Description": "very odd world",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_3527949f-b129-41a4-bf05-3475449aa38e.png",
+                "URL": "https://vrchat.com/home/world/wrld_3527949f-b129-41a4-bf05-3475449aa38e",
+                "Visibility": "Published to Labs",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "Cry of Fear - Simon's House",
+                "Description": "has had way too many technical difficulties",
+                "Image": "/images/vrchat/w10.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "cave",
+                "Description": "so it's a cave",
+                "Image": "https://www.vrcw.net/storage/worlds/wrld_0ef0b454-78ed-4310-a8d6-0484a76faf94.png",
+                "URL": "https://vrchat.com/home/world/wrld_0ef0b454-78ed-4310-a8d6-0484a76faf94",
+                "Visibility": "",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "catacombs",
+                "Description": "<p class=\"glimpse1 glimpse2 glimpse3 glimpse4\"><span>2025-10-??</span></p>",
+                "Image": "/images/vrchat/w12.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "portalland",
+                "Description": "\"we got you with 2500 portugals\"<br>warning: very laggy",
+                "Image": "/images/vrchat/w13.webp",
+                "URL": "https://vrchat.com/home/world/wrld_d4b52f6f-8949-4c7f-bb23-acf798079537",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "midcity",
+                "Description": "i need my shi loud lou lo l",
+                "Image": "/images/vrchat/w14.webp",
+                "URL": "https://vrchat.com/home/world/wrld_6c305133-ff8b-4338-abf2-9188ea478c67",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "debug_slot_1",
+                "Description": "so i can do public tests or somethin",
+                "Image": "/images/vrchat/w15.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC"]
+            },
+            {
+                "Name": "Zeitpyramide",
+                "Description": "vrchat probably won't last this long but eh",
+                "Image": "/images/vrchat/w16.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC"]
+            },
+            {
+                "Name": "cge7-193",
+                "Description": "interloper",
+                "Image": "/images/vrchat/w17.webp",
+                "URL": "https://vrchat.com/home/world/wrld_a9c3bbea-7520-4d50-9d70-170000f66696",
+                "Visibility": "Private",
+                "Platforms": ["PC","A"]
+            },
+            {
+                "Name": "makesomethingoriginal",
+                "Description": "form your own meaning",
+                "Image": "/images/vrchat/w18.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC"]
+            },
+            {
+                "Name": "dip",
+                "Description": "get it and",
+                "Image": "/images/vrchat/w19.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC"]
+            }
+        ]
+    },
+    {
+        "group": [
+            {
+                "Name": "No CSS",
+                "Tag": "NOCSS.8738",
+                "Description": "The absence of Counter-Strike: Source.<br>(within Garry's Mod)<br><br>When there's no textures, this purple and black checkerboard tile appears as the replacement for the the missing textures.<br><br>This replacement appears in many games, including source engine games (if not changed), Minecraft, and some more.",
+                "Banner": "/images/vrchat/g1b.webp",
+                "Icon": "/images/vrchat/g1.webp",
+                "URL": "https://vrchat.com/home/group/grp_61ed1e11-41f9-4b8d-89e6-803d808d9dc5"
+            },
+            {
+                "Name": "Eastern Instances",
+                "Tag": "EAST.4832",
+                "Description": "my theory as to y there r too many western servers is dat vrchat defaults ur server setting to western<br><br>also i spent a good amount of time making dis icon and banner‚ i had to recreate the flag thingy<br>",
+                "Banner": "/images/vrchat/g2b.webp",
+                "Icon": "/images/vrchat/g2.webp",
+                "URL": "https://vrchat.com/home/group/grp_fb331eb3-60f7-46fe-a427-ba12906e9d23"
+            },
+            {
+                "Name": "Object reference not set to an instance of an object",
+                "Tag": "OBJREF.3240",
+                "Description": "NullReferenceException: Object reference not set to an instance of an object at [insert C# script here]<br><br>You'll get the, \"Experienced\" role if you like, experienced the error.<br>Also, don't worry about asking me, I'll know when you do.<br>",
+                "Banner": "/images/vrchat/g3b.webp",
+                "Icon": "/images/vrchat/g3.webp",
+                "URL": "https://vrchat.com/home/group/grp_de6f5471-463a-4006-85fa-d32e924ec9d1"
+            },
+            {
+                "Name": "___",
+                "Tag": "MIPMAP.6219",
+                "Description": "<i><span style=\"color: #f0f;\">just for custom banner</span></i><br>[HideInInspector]",
+                "Banner": "/images/noimage.webp",
+                "Icon": "/images/vrchat/g4.webp",
+                "URL": "https://vrchat.com/home/group/grp_af3d9d18-6bd0-4c9e-8f9f-b7d27b91c00c"
+            },
+            {
+                "Name": "Grounded",
+                "Tag": "GRNDED.0241",
+                "Description": "big scary spiders, annoying mosquitoes that jump you when you least expect it, and much more",
+                "Banner": "/images/vrchat/g5b.webp",
+                "Icon": "/images/vrchat/g5.webp",
+                "URL": "https://vrchat.com/home/group/grp_cd5d024a-a6f6-4f13-afaf-9cd233295c5b"
+            }
+        ]
+    }
+]

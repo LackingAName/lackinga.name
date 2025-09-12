@@ -1,28 +1,28 @@
 #nav {
     font-size: 16px;
-    background: #fff;
-    height: 2em;
-    width: 100%;
+    background: none;
+    height: 30px;
+    width: calc(100% - 40px);
     position: fixed;
-    top: 0;
     z-index: 9999;
+    margin: 20px 20px;
+    align-content: center;
     overflow: hidden;
+    top: 0;
 }
 #navpadding {
     padding-bottom: 50px;
 }
 #nav .item {
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    padding: 0.125em 20px;
     transform-origin: center center;
     display: flex;
     cursor: pointer;
-    float: left;
-
-    transition: transform 0.1s;
-}
-#nav .item:hover {
-    transform: scale(1.1);
+    float: right;
+    background: #fff;
+    height: 100%;
 
     transition: transform 0.1s;
 }
@@ -31,18 +31,14 @@
     font-size: 20px;
     font-family: var(--font);
     font-weight: bold;
-    
-    transition: transform 0.1s;
+}
+#nav .index {
+    float: left;
 }
 #nav img {
-    padding: 0 !important;
-    height: 2em;
+    height: inherit;
 }
 
-.arrow {
-    padding: 0.125em 5px !important;
-    float: right !important;
-}
 .item:hover .dropdown {
     display: block;
 }
