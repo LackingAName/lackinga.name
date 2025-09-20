@@ -37,6 +37,7 @@
 }
 #nav img {
     height: inherit;
+    image-rendering: auto;
 }
 
 .item:hover .dropdown {

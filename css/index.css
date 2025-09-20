@@ -1,178 +1,3 @@
-/*fonts*/
-@font-face {
-    font-family: "Roboto Mono";
-    src: url("/fonts/RobotoMono.ttf");
-}
-@font-face {
-    font-family: "Inconsolata";
-    src: url("/fonts/Inconsolata.ttf");
-}
-@font-face {
-    font-family: "Share-TechMono";
-    src: url("/fonts/Share-TechMono.ttf");
-}
-
-/*animations*/
-@keyframes rgbtextmove {
-    0% {background-position: 0 0;}
-    100% {background-position: 70% 0;}
-}
-@keyframes LoadOut {
-    0%,40% {opacity: 1;}
-    100% {opacity: 0;}
-}
-@keyframes Delay {
-    0%,99% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-:root {
-    --font: "Roboto Mono";
-}
-
-* {
-    text-decoration: none;
-    scroll-behavior: smooth;
-    -webkit-user-drag: none;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-body {
-    background-color: #000;
-    min-height: 100vh;
-}
-::selection {
-    color: #000;
-    background-color: rgba(255,255,255,0.7)
-}
-::-webkit-scrollbar {
-    width: 0px;
-}
-::-webkit-scrollbar-track {
-    background: #fff;
-}
-::-webkit-scrollbar-thumb {
-    background: #808080;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #aaaaaa;
-}
-::-webkit-scrollbar-button {
-    background: #fff;
-    height: 48px;
-}
-
-a, h1, h2, h3, p, button {
-    user-select: none;
-    text-align: center;
-    font-family: var(--font);
-}
-a, h1, h2, h3, p {
-    margin: 0;
-}
-
-a {
-    color: #0080ff;
-    font-weight: 500;
-    font-size: 40px;
-}
-h1 {
-    color: #fff;
-    font-weight: 1000;
-    font-size: 80px;
-}
-h2 {
-    color: #fff;
-    font-weight: 1000;
-    font-size: 40px;
-}
-h3 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-}
-p {
-    color: #fff;
-    font-weight: 500;
-    font-size: 40px;
-}
-button {
-    color: #000;
-    font-weight: 500;
-    font-size: 20px;
-    border: 0;
-    width: 20ex;
-    height: 2em;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-    background: rgb(255,255,255);
-}
-video {
-    aspect-ratio: 16 / 9;
-    max-height: 720px;
-    margin: auto;
-    display: block;
-}
-
-#Container {
-    margin: 25px;
-    outline: 5px solid #fff;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: calc(100vh - 100px);
-}
-
-#error {
-    font-size: 100px;
-    letter-spacing: 10vw;
-    text-indent: 10vw;
-}
-
-.linebreak {
-    border-top: 5px solid #fff;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-.rgbtext {
-    color: transparent;
-    background: linear-gradient(to right, 
-        #ff0000,
-        #ff8000,
-        #ffff00,
-        #00ff00,
-        #00ff80,
-        #00ffff,
-        #0080ff,
-        #0000ff,
-        #8000ff,
-        #ff00ff,
-        #ff0080,
-        #ff0000,
-        #ff8000,
-        #ffff00,
-        #00ff00,
-        #00ff80,
-        #00ffff,
-        #0080ff,
-        #0000ff,
-        #8000ff,
-        #ff00ff,
-        #ff0080
-        /* all just for seamless scrolling rgb */
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: rgbtextmove 6s linear infinite;
-    background-size: 400% 100%;
-}
-
 #UserContainer {
     width: 100%;
     height: 512px;
@@ -183,17 +8,17 @@ video {
     justify-content: center;
     align-items: center;
 }
+.Detection {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
 #Cover {
     position: absolute;
     z-index: 3;
     pointer-events: none;
 
     animation: LoadOut 0.5s linear forwards;
-}
-.Detection {
-    position: absolute;
-    pointer-events: none;
-    opacity: 0;
 }
 #UserButton {
     background: #ffffff00;
@@ -221,6 +46,7 @@ video {
 #UserButton:hover ~ #UserCH {
     color: #fff;
 }
+
 #UserLabelContainer {
     display: block;
     margin: auto;
@@ -238,78 +64,48 @@ video {
     justify-content: center;
     align-items: center;
 }
+
 #LogoContainer {
     width: 256px;
     height: 256px;
     display: block;
     margin: auto;
 }
-#DCS, #DCS h1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    z-index: 999;
-}
-#DCS p {
-    padding-top: 10px;
-    font-size: 40px;
-}
-#DCSFSCI div {
-    transition: height 2s, bottom 2s;
-}
 
-.world {
+#LinkContainer {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto 40px auto;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    flex-direction: row;
+    gap: 25px;
 }
-.world p {
-    font-size: 20px;
-    margin: 0;
-    text-align: left;
+#LinkContainer div {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
-.world a, .world h1 {
-    font-size: 40px;
-    margin: 0;
-    text-align: left;
-}
-.world div p {
-    text-align: left;
-}
-.world .d {
-    color: #888;
-}
-.worldImg {
-    aspect-ratio: 4 / 3;
-    height: 300px;
-}
-w-r {
-    color: #f00;
-    padding-left: 20px;
-}
-w-g {
-    color: #0f0;
-    padding-left: 20px;
-}
-.groupImg {
-    aspect-ratio: 1 / 1;
-    height: 300px;
-}
-.groupInfoDiv {
+#LinkContainer img {
     width: 100%;
-    background-size: contain;
-}
-.groupInfoDiv p, .groupInfoDiv h1, .groupInfoDiv a {
-    background-color: rgba(0,0,0,0.5);
-    white-space: nowrap;
-}
-.groupInfoDiv p {
     height: 100%;
 }
-.groupBanner {
-    width: calc(100% - 300px);
-    height: 300px;
-    position: absolute;
-    transform: translateY(-352px);
-    object-fit: cover;
-    z-index: -100;
+
+#LinkContainer .Multi div {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#LinkContainer .Multi div a {
+    font-size: 20px;
+    color: #fff;
+}
+#LinkContainer .Multi:hover div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#LinkContainer .Multi:hover img {
+    display: none;
 }
