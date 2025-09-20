@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded",function() {
-    $(".nongrid div").each(function() {
-        const URL = this.children[0].src.slice(0,-5) + "base.webp";
+    const Grid = document.getElementsByClassName("nongrid")[0];
 
-        const XHR = new XMLHttpRequest();
-        XHR.open("GET",URL,true);
-        XHR.onload = () => {
-            if (XHR.responseText.includes("WEBP")) {
-                this.innerHTML += Add(URL);
-            }
-        }
-        XHR.send();
+    $.getJSON("/json/non.json", function(JSON) {
+        $.each(JSON, function(_, Data) {
+            const Base = Data.Base ? Add(Data.Image.slice(0,-5) + "base.webp") : "";
+            const Fav = Data.Favorite ? "fav" : "";
+
+            const Div = document.createElement("div");
+                const Image = document.createElement("img");
+                Image.className = Fav;
+                Image.setAttribute("onclick","window.open(src,'_blank');")
+                Image.src = Data.Image;
+            Div.appendChild(Image);
+            Div.innerHTML += Data.Name + "<br>" + Data.Date + "<br>" + Data.Credits + Base;
+            Grid.appendChild(Div);
+        });
     });
 })
 
