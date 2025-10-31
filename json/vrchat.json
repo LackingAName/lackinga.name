@@ -152,6 +152,14 @@
                 "URL": "",
                 "Visibility": "Private",
                 "Platforms": ["PC"]
+            },
+            {
+                "Name": "SCP: Containment Breach VRC",
+                "Description": "insane",
+                "Image": "/images/vrchat/w20.webp",
+                "URL": "",
+                "Visibility": "Private",
+                "Platforms": ["PC"]
             }
         ]
     },
