@@ -14,7 +14,7 @@
                 "Description": "(2024 remaster — from 2021)",
                 "Image": "https://www.vrcw.net/storage/worlds/wrld_8af1a88a-30d8-4ea7-835e-677eefc05ae6.png",
                 "URL": "https://vrchat.com/home/world/wrld_8af1a88a-30d8-4ea7-835e-677eefc05ae6",
-                "Visibility": "Published to Labs",
+                "Visibility": "",
                 "Platforms": ["PC","A"]
             },
             {
@@ -157,8 +157,8 @@
                 "Name": "SCP: Containment Breach VRC",
                 "Description": "insane",
                 "Image": "/images/vrchat/w20.webp",
-                "URL": "",
-                "Visibility": "Private",
+                "URL": "https://vrchat.com/home/world/wrld_b94d3e7b-3c5d-48bc-b9d3-e211a236fec9",
+                "Visibility": "Published to Labs",
                 "Platforms": ["PC"]
             }
         ]
