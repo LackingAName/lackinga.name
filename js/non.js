@@ -1,9 +1,25 @@
 document.addEventListener("DOMContentLoaded",function() {
-    const Grid = document.getElementsByClassName("nongrid")[0];
+    var Grid = document.getElementsByClassName("nongrid")[0];
+    const Container = document.getElementById("Container");
 
     $.getJSON("/json/non.json", function(JSON) {
         $.each(JSON, function(_, Data) {
-            const Base = Data.Base ? Add(Data.Image.slice(0,-5) + "base.webp") : "";
+            if (Data.Separator) {
+                const Label = document.createElement("div");
+                    Label.style.color = "#fff";
+                    Label.style.textAlign = "center";
+                    Label.style.fontSize = "64px";
+                    Label.style.marginTop = "80px";
+                    Label.innerHTML = Data.Separator;
+                Container.appendChild(Label);
+
+                Grid = document.createElement("div");
+                    Grid.className = "nongrid";
+                Container.appendChild(Grid);
+
+                return;
+            }
+            const Base = Data.Base ? AddBase(Data.Image.slice(0,-5) + "base.webp") : "";
             const Fav = Data.Favorite ? "fav" : "";
 
             const Div = document.createElement("div");
@@ -16,8 +32,8 @@ document.addEventListener("DOMContentLoaded",function() {
             Grid.appendChild(Div);
         });
     });
-})
+});
 
-function Add(URL) {
+function AddBase(URL) {
     return "<br><span style='cursor:pointer;' onclick=\"window.open('" + URL + "','_blank');\"><b>view base</span>";
 }

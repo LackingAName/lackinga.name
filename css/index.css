@@ -43,17 +43,15 @@
     color: #fff;
     text-shadow: #000 0 0 10px;
 }
-#UserButton:hover ~ #UserCH {
+#UserButton:hover {
     color: #fff;
 }
 
 #UserLabelContainer {
-    display: block;
     margin: auto;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 #UserLabel {
     color: #fff;

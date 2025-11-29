@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded",function() {
 });
 
 // math stuff
+function Lerp(From, To, Time) {
+    return From + (To - From) * Time;
+}
 function WrapAngle(Angle) {
     return ((Angle % 360) + 360) % 360;
 }

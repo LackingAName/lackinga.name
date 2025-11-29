@@ -196,6 +196,7 @@
     border-color: rgb(24, 27, 31);
     border-width: 0px 3px 3px;
     border-radius: 0px 0px 8px 8px;
+    height: 100%;
 }
 .WorldCaption p {
     color: #888;

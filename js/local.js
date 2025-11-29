@@ -42,12 +42,13 @@ var DoULGlitch = false
 var ULGlitchDebounce = false
 var R = "`\'\"&:;@#[]<>^_*/\\0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
 const ULGlitch = async () => {
-    if (!DoULGlitch || ULGlitchDebounce || !document.getElementById("UserLabel")) {return}
+    if (!DoULGlitch || ULGlitchDebounce || !document.getElementById("UserLabel")) return
+
     var UL = document.getElementById("UserLabel")
     
-    if (Math.floor(Math.random() * Math.floor(2)) != 1) {return}
+    if (Math.floor(Math.random() * Math.floor(2)) != 1) return
     ULGlitchDebounce = true
-    // Ik this code is attrocious
+    // ik this code is attrocious
 
     var RandomReplace1 = (Math.floor(Math.random() * Math.floor(6)) + 1)
     if (RandomReplace1 == 2) {
@@ -121,6 +122,16 @@ const ULGlitch = async () => {
     UL.style.transform = "none"
     UL.style.fontFamily = "Share-TechMono"
     UL.style.cursor = "pointer"
-    UL.onclick = () => {location.href = "/votv"}
+    UL.onclick = () => location.href = "/votv"
     ULGlitchDebounce = false
+
+    if (!DoULGlitch || ULGlitchDebounce || !document.getElementById("UserLabel")) {
+        UL.style.color = "#fff";
+        UL.style.transform = "none";
+        UL.style.fontFamily = "Roboto Mono";
+        UL.style.cursor = null;
+        UL.onclick = null;
+        
+        UL.innerHTML = Index;
+    }
 }
