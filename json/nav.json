@@ -1,7 +1,12 @@
-{
-    "index": "/",
-    "vrchat": "/vrchat",
-    "non": "/non",
-    "caseoh": "/caseoh",
-    "credits": "/credits"
-}
+[
+    {
+        "index": "/",
+        "vrchat": "/vrchat",
+        "non": "/non",
+        "programming": "/programming",
+        "credits": "/credits"
+    },
+    {
+        "class # *": "/class"
+    }
+]

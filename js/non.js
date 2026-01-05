@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded",function() {
     const Container = document.getElementById("Container");
 
     $.getJSON("/json/non.json", function(JSON) {
+        document.getElementById("Iam3").innerHTML = "I am [non6-" + (Object.keys(JSON).length - 16) + "&1]]";
         $.each(JSON, function(_, Data) {
             if (Data.Separator) {
                 const Label = document.createElement("div");

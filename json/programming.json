@@ -1,0 +1,183 @@
+[
+    {
+        "Name": "AutoHotkey",
+        "Image": "ahk.svg",
+        "Words": "i used this to spam space when it's held down",
+        "Know": "a wee bit"
+    },
+    {
+        "Name": "Batch",
+        "Image": "batch.webp",
+        "Words": "very useful if ur not on linux",
+        "Know": "yea"
+    },
+    {
+        "Name": "C--",
+        "Image": "c--.svg",
+        "Words": "idfk lmao",
+        "Know": "no wth"
+    },
+    {
+        "Name": "C",
+        "Image": "c.svg",
+        "Words": "classic",
+        "Know": "lil bit"
+    },
+    {
+        "Name": "C++",
+        "Image": "c++.svg",
+        "Words": "&#128293;",
+        "Know": "lil bit 2"
+    },
+    {
+        "Name": "C#",
+        "Image": "csharp.svg",
+        "Words": "i wish it wasn't microsoft :(",
+        "Know": "yes...",
+        "Show": "sure"
+    },
+    {
+        "Name": "CSS",
+        "Image": "css.svg",
+        "Words": "ez & cool :)",
+        "Know": "yuh",
+        "Show": "yuhuh"
+    },
+    {
+        "Name": "F#",
+        "Image": "fsharp.svg",
+        "Words": "this looks disgusting",
+        "Know": "never"
+    },
+    {
+        "Name": "GLSL",
+        "Image": "opengl.svg",
+        "Words": "hlsl and glsl both got their ups and downs",
+        "Know": "it's like c kinda"
+    },
+    {
+        "Name": "Go",
+        "Image": "go.svg",
+        "Words": "Go-ogle, nah but it looks decent",
+        "Know": "nope"
+    },
+    {
+        "Name": "GDScript",
+        "Image": "godot.svg",
+        "Words": "who told u python was good",
+        "Know": "eh"
+    },
+    {
+        "Name": "Haxe",
+        "Image": "haxe.svg",
+        "Words": "i heard it's cool",
+        "Know": "no"
+    },
+    {
+        "Name": "HLSL",
+        "Image": "directx.svg",
+        "Words": "microsoft booo",
+        "Know": "don't need to anymore haaa"
+    },
+    {
+        "Name": "HTML",
+        "Image": "html5.svg",
+        "Words": "yo that's this",
+        "Know": "yaes",
+        "Show": "why not"
+    },
+    {
+        "Name": "Java",
+        "Image": "java.svg",
+        "Words": "c# is better",
+        "Know": "yup",
+        "Show": "yea..."
+    },
+    {
+        "Name": "JavaScript",
+        "Image": "js.svg",
+        "Words": "juuust above python",
+        "Know": "yes sadly i hate this",
+        "Show": "i guess"
+    },
+    {
+        "Name": "Kotlin",
+        "Image": "kotlin.svg",
+        "Words": "i luv u jetbrains",
+        "Know": "no"
+    },
+    {
+        "Name": "Lua",
+        "Image": "lua.svg",
+        "Words": "the best one, learn it rn",
+        "Know": "yes!",
+        "Show": "yes pls"
+    },
+    {
+        "Name": "Luau",
+        "Image": "luau.webp",
+        "Words": "first one i learned, it's cool cuz lua, but roblox doe...",
+        "Know": "yes"
+    },
+    {
+        "Name": "PHP",
+        "Image": "php.svg",
+        "Words": "C-hp",
+        "Know": "no"
+    },
+    {
+        "Name": "PowerShell",
+        "Image": "powershell.webp",
+        "Words": "batch, but it takes more to do anything",
+        "Know": "no"
+    },
+    {
+        "Name": "Python",
+        "Image": "python.svg",
+        "Words": "save urself and never learn this, blender pls switch to lua",
+        "Know": "the least amount i can"
+    },
+    {
+        "Name": "Ruby",
+        "Image": "ruby.svg",
+        "Words": "uhhhh, no",
+        "Know": "no"
+    },
+    {
+        "Name": "Rust",
+        "Image": "rust.svg",
+        "Words": "i wanna learn dis but i'd have extremely few use cases",
+        "Know": "no"
+    },
+    {
+        "Name": "Sass",
+        "Image": "sass.svg",
+        "Words": "it's css but like, even cooler",
+        "Know": "i've only done some"
+    },
+    {
+        "Name": "Scratch",
+        "Image": "scratch.svg",
+        "Words": "first visual programming language i learned, very good for starting out",
+        "Know": "yea"
+    },
+    {
+        "Name": "Squirrel",
+        "Image": "squirrel.webp",
+        "Words": "i've only seen this with like, portal 2",
+        "Know": "no"
+    },
+    {
+        "Name": "TypeScript",
+        "Image": "ts.svg",
+        "Words": "javascript's savior",
+        "Know": "yuuuup",
+        "Show": "yer"
+    },
+    {
+        "Name": "Zig",
+        "Image": "zig.svg",
+        "Words": "it all sounded cool until i saw code",
+        "Know": "never"
+    }
+]
