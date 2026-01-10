@@ -1,31 +1,37 @@
 [
     {
+        "Image": "/images/non/non53.webp",
+        "Name": "[non53]]",
+        "Date": "2026-01-10 18:33",
+        "Credits": "Supraworld / ASTRONEER / Minecraft / Voices of the Void / me! (pictures) / Big Black (Atomizer artwork & lyrics) / A$AP Rocky (lyrics) / Photoshop"
+    },
+    {
         "Image": "/images/non/non52.webp",
         "Name": "Nexus [non52]]",
         "Date": "2026-01-07 19:20",
         "Credits": "VRChat (Parietal) / albumoftheyear.org (user must hear) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non51.webp",
         "Name": "End [non51]]",
         "Date": "2025-12-29 12:50",
         "Credits": "VLC (datamoshing) / SCP: Containment Breach / Minecraft (assets) / JetBrains (CLion) / me! (hatifier, laq format, picture, Minecraft Betterock) / OpenGL / Vulkan / GLFW / non50 / ImHex / OpenTK / CJ (block texture) / VRChat (FTaC ban [### # raeton, creepy ###]) / Machine Girl (Psychic Attack song title) / Lucy Bedroque (Unmusique art) / C??? (plagiarism) /j / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non50.webp",
         "Name": "Frame contingency [non50]]",
         "Date": "2025-12-06 03:33",
         "Credits": "VLC (datamoshing) / SCP: Containment Breach / Unity (Editor) / Half-Life 2 (Very Hard Mod) / VRChat (Midwich Elementary - Silent Hill / SCP Site 002 / Cry of Fear - Simon's Apartment / Boeing 747 test / cursor) / femtanyl (BODY THE PISTOL eyes) / Counter-Strike 2 / non40-49 / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non49.webp",
         "Name": "[non49]]",
         "Date": "2025-11-16 13:07",
         "Credits": "Unity (Editor) / SCP: Containment Breach (assets) / JPEG (corruption) / Machine Girl (PsychoWarrior: MG Ultra X) / VRChat / PoolMon / Windows / Photoshop",
-        "Favorite": "Yeah!"
+        "Favorite": true
     },
     {
         "Image": "/images/non/non48.webp",
@@ -38,28 +44,28 @@
         "Name": "[non47]]",
         "Date": "2025-10-17 11:48",
         "Credits": "SCP: Containment Breach / Unity (Editor) / PoolMon / VRChat (SCP Mini Site / SCP Site: VRChat) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non46.webp",
         "Name": "[non46]]",
         "Date": "2025-10-04 10:41",
         "Credits": "me! (pictures) / Chat Pile (lyrics) / PoolMon / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non45.webp",
         "Name": "[non45]]",
         "Date": "2025-09-30 18:31",
         "Credits": "Injury Reserve (By the Time I Get to Phoenix) / Windows / Supraworld / VRChat (I feel small / Murder 4) / Audacity / clipping. / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non44.webp",
         "Name": "Keep going [non44]]",
         "Date": "2025-09-25 16:33",
         "Credits": "SCP: Secret Laboratory / Supraland / BABBDI / me! (pictures) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non43.webp",
@@ -84,42 +90,42 @@
         "Name": "[non40]]",
         "Date": "2025-08-29 16:11",
         "Credits": "VRChat (Crystal Lake Water Park) / dälek (Absence) / Jay (picture) / Voices of the Void  / BookOwnsYou / Death Grips / non1-39 / albumoftheyear.org / J CYN (Blood Stasis) / Task Manager / EAC (logo) / theneedledrop (face) / Photoshop",
-        "Favorite": "Yeah!"
+        "Favorite": true
     },
     {
         "Image": "/images/non/non39.webp",
         "Name": "! [non39]]",
         "Date": "2025-08-23 17:46",
         "Credits": "VRChat (TF2 2Fort) / Team Fortress 2 (assets) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non38.webp",
         "Name": "[non38]]",
         "Date": "2025-08-20 01:25",
         "Credits": "VRChat (Interstices, Intertwined / cursor) / PoolMon / dälek (Absence) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non37.webp",
         "Name": "[non37]]",
         "Date": "2025-08-17 05:31",
         "Credits": "ASTRONEER / clipping. (Forever War) / VRChat (cursor) / Photoshop",
-        "Favorite": "Yeah!"
+        "Favorite": true
     },
     {
         "Image": "/images/non/non36.webp",
         "Name": "We're sorry! Something went wrong! [non36]]",
         "Date": "2025-08-15 23:30",
         "Credits": "VRChat (errorworld.vrcw / cursor) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non35.webp",
         "Name": "3 keycards [non35]]",
         "Date": "2025-08-09 00:07",
         "Credits": "VRChat (Stillwoods Execution / cursor) / JPEGMAFIA (Veteran / lyrics) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non34.webp",
@@ -156,7 +162,7 @@
         "Name": "these are the negative and irrational thoughts of johnnascus [non30]]",
         "Date": "2025-07-11 23:52",
         "Credits": "Voices of the Void / CJ (having his camera glitch) / Clipse (Let God Sort Em Out) / STOMACH BOOK (GOODNIGHT HYPNOPOMP) / Xbox / Photoshop",
-        "Favorite": "Yeah!"
+        "Favorite": true
     },
     {
         "Image": "/images/non/non29.webp",
@@ -199,7 +205,7 @@
         "Name": "^•ω•^ [non23]]",
         "Date": "2025-06-17 13:38",
         "Credits": "VRChat (Magnetize) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non22.webp",
@@ -218,29 +224,29 @@
         "Name": "forgot my favorite color [non20]]",
         "Date": "2025-06-06 08:13",
         "Credits": "VRChat (Murder 4) / me! (pictures) / Photoshop",
-        "Favorite": "Yeah!",
-        "Base": "Yeah!"
+        "Favorite": true,
+        "Base": true
     },
     {
         "Image": "/images/non/non19.webp",
         "Name": "[non19]]",
         "Date": "2025-06-05 03:35",
         "Credits": "VRChat (this is a forest) / BookOwnsYou / CJ (mouse) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non18.webp",
         "Name": "[non18]]",
         "Date": "2025-05-30 21:21",
         "Credits": "Unity (Editor) / Paint.NET",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non17.webp",
         "Name": "[non17]]",
         "Date": "2025-05-17 16:42",
         "Credits": "Minecraft / Paint.NET",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non16.webp",
@@ -259,8 +265,8 @@
         "Name": "[non14]]",
         "Date": "2025-05-03 17:35",
         "Credits": "VRChat (Stormy Cave) / Photoshop",
-        "Base": "Yeah!",
-        "Favorite": "Yeah!"
+        "Base": true,
+        "Favorite": true
     },
     {
         "Image": "/images/non/non13.webp",
@@ -273,7 +279,7 @@
         "Name": "drawer [non12]]",
         "Date": "2025-04-16 14:58",
         "Credits": "VRChat (Botanophobia) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non11.webp",
@@ -286,42 +292,42 @@
         "Name": "[non10]]",
         "Date": "2025-01-17 17:35",
         "Credits": "CJ (base picture) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non9.webp",
         "Name": "sync [non9]]",
         "Date": "2025-01-15 16:45",
         "Credits": "VRChat (Cry of Fear - Simon's Apartment) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non1.webp",
         "Name": "yea [non1]]",
         "Date": "2024-12-10 22:46",
         "Credits": "Unity (Editor) / VIVE / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non8.webp",
         "Name": "[non8]]",
         "Date": "2025-01-08 18:24",
         "Credits": "Roblox (Studio) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non7.webp",
         "Name": "beanworld [non7]]",
         "Date": "2024-12-22 18:59",
         "Credits": "Blender / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non6.webp",
         "Name": "[non6]]",
         "Date": "2024-12-14 03:12",
         "Credits": "Unity (Editor) / Nine Inch Nails (The Fragile cover art inspiration) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     { "Separator": "director's cut: lost or not included" },
     {
@@ -329,42 +335,42 @@
         "Name": "[nonl1]]",
         "Date": "2024-12-10 22:17",
         "Credits": "Unity (Editor) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/nonl2.webp",
         "Name": "[nonl2]]",
         "Date": "2024-12-10 22:35",
         "Credits": "Unity (Editor) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non2.webp",
         "Name": "[non2]]",
         "Date": "2024-12-10 22:50",
         "Credits": "Unity (Editor) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non3.webp",
         "Name": "[non3]]",
         "Date": "2024-12-10 22:59",
         "Credits": "Unity (Editor) / Nine Inch Nails (The Fragile cover art inspiration / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non4.webp",
         "Name": "[non4]]",
         "Date": "2024-12-10 23:05",
         "Credits": "Unity (Editor) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/non5.webp",
         "Name": "[non5]]",
         "Date": "2024-12-10 23:33",
         "Credits": "Unity (Editor) / Xbox / JPEGMAFIA (Black Ben Carson) / Team Psykskallar / Windows / KineMaster (watermark) / YouTube / VRChat / CJ (powerpoint presentation) / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/nonl3.webp",
@@ -395,7 +401,7 @@
         "Name": "[nonl7]]",
         "Date": "2024-12-27 23:18",
         "Credits": "Blender / Photoshop",
-        "Base": "Yeah!"
+        "Base": true
     },
     {
         "Image": "/images/non/nonl8.webp",
