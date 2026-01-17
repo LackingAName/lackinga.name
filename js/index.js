@@ -37,6 +37,7 @@ function Validate(URL) {
         Img.addEventListener("load", () => Resolve(true));
         Img.addEventListener("error", () => Resolve(false));
         Img.src = URL;
+        Img.remove();
     });
 }
 
