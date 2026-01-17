@@ -1,113 +1,159 @@
-document.addEventListener("DOMContentLoaded",function() {
+document.addEventListener("DOMContentLoaded", function () {
     const WorldGrid = document.getElementsByClassName("WorldGrid")[0];
     const GroupGrid = document.getElementsByClassName("GroupGrid")[0];
 
-    $.getJSON("/json/vrchat.json",function(JSON) {
-        $.each(JSON[0].world, function(_, Data) {
+    $.getJSON("/json/vrchat.json", function (JSON) {
+        $.each(JSON[0].world, function (_, Data) {
             const World = document.createElement("div");
             World.className = "World";
+            {
                 const WorldDetails = document.createElement("div");
                 WorldDetails.className = "WorldDetails";
+                {
                     const WorldImage = document.createElement("a");
                     WorldImage.className = "WorldImage";
                     if (Data.URL) WorldImage.href = Data.URL;
                     WorldImage.target = "_blank";
+                    {
                         const WorldPlatforms = document.createElement("div");
                         WorldPlatforms.className = "WorldPlatforms";
-                            if (Data.Platforms.includes("PC")) AddPlatform("PC",WorldPlatforms);
-                            if (Data.Platforms.includes("A")) AddPlatform("A",WorldPlatforms);
-                    WorldImage.appendChild(WorldPlatforms);
+                        if (Data.Platforms.includes("PC")) AddPlatform("PC", WorldPlatforms);
+                        if (Data.Platforms.includes("A")) AddPlatform("A", WorldPlatforms);
+                        WorldImage.appendChild(WorldPlatforms);
+
                         const WorldImageBorder = document.createElement("div");
                         WorldImageBorder.className = "WorldImageBorder " + Data.Visibility.split(" ").at(-1);
+                        {
                             const WIBLabel = document.createElement("div");
                             WIBLabel.innerHTML = Data.Visibility;
                             WorldImageBorder.appendChild(WIBLabel);
-                    WorldImage.appendChild(WorldImageBorder);
+                        }
+                        WorldImage.appendChild(WorldImageBorder);
+
                         const WorldIMG = document.createElement("img");
                         WorldIMG.referrerPolicy = "no-referrer";
                         WorldIMG.src = Data.Image;
-                    WorldImage.appendChild(WorldIMG);
-                WorldDetails.appendChild(WorldImage);
+                        WorldImage.appendChild(WorldIMG);
+                    }
+                    WorldDetails.appendChild(WorldImage);
+
                     const WorldName = document.createElement("div");
                     WorldName.className = "WorldName";
+                    {
                         const WNLink = document.createElement("a");
                         if (Data.URL) WNLink.href = Data.URL;
+                        {
                             const WNLabel = document.createElement("h4");
                             WNLabel.innerHTML = Data.Name;
-                        WNLink.appendChild(WNLabel);
-                    WorldName.appendChild(WNLink);
-                WorldDetails.appendChild(WorldName);
-            World.appendChild(WorldDetails);
+                            WNLink.appendChild(WNLabel);
+                        }
+                        WorldName.appendChild(WNLink);
+                    }
+                    WorldDetails.appendChild(WorldName);
+                }
+                World.appendChild(WorldDetails);
+
                 const WorldCaption = document.createElement("div");
                 WorldCaption.className = "WorldCaption";
+                {
                     const WCLabel = document.createElement("p");
                     WCLabel.innerHTML = Data.Description;
-                WorldCaption.appendChild(WCLabel);
-            World.appendChild(WorldCaption);
+                    WorldCaption.appendChild(WCLabel);
+                }
+                World.appendChild(WorldCaption);
+            }
             WorldGrid.appendChild(World);
         });
 
-        $.each(JSON[1].group, function(_, Data) {
+        $.each(JSON[1].group, function (_, Data) {
             const Group = document.createElement("a");
             Group.className = "Group";
             Group.href = Data.URL;
             Group.target = "_blank";
+            {
                 const GroupTop = document.createElement("div");
                 GroupTop.className = "GroupTop";
+                {
                     const GroupBanner = document.createElement("div");
                     GroupBanner.className = "GroupBanner";
+                    {
                         const GBIMG = document.createElement("img");
                         GBIMG.className = "GroupBannerImage";
                         GBIMG.src = Data.Banner;
-                    GroupBanner.appendChild(GBIMG);
+                        GroupBanner.appendChild(GBIMG);
+
                         const GroupIcon = document.createElement("div");
                         GroupIcon.className = "GroupIcon";
-                            const GIIMG = document.createElement("img");
-                            GIIMG.src = Data.Icon;
+
+                        const GIIMG = document.createElement("img");
+                        GIIMG.src = Data.Icon;
                         GroupIcon.appendChild(GIIMG);
-                    GroupBanner.appendChild(GroupIcon);
-                GroupTop.appendChild(GroupBanner);
+                        GroupBanner.appendChild(GroupIcon);
+                    }
+                    GroupTop.appendChild(GroupBanner);
+
                     const GroupName = document.createElement("div");
                     GroupName.className = "GroupName";
+                    {
                         const GNButton = document.createElement("button");
+                        {
                             const GNLabel = document.createElement("h4");
                             GNLabel.innerHTML = Data.Name;
-                        GNButton.appendChild(GNLabel);
-                    GroupName.appendChild(GNButton);
-                GroupTop.appendChild(GroupName);
-            Group.appendChild(GroupTop);
+                            GNButton.appendChild(GNLabel);
+                        }
+                        GroupName.appendChild(GNButton);
+                    }
+                    GroupTop.appendChild(GroupName);
+                }
+                Group.appendChild(GroupTop);
+
                 const GroupBottom = document.createElement("div");
                 GroupBottom.className = "GroupBottom";
+                {
                     const GroupDetails = document.createElement("div");
                     GroupDetails.className = "GroupDetails";
+                    {
                         const GroupDescription = document.createElement("div");
                         GroupDescription.className = "GroupDescription";
+                        {
                             const GDP = document.createElement("p");
                             GDP.innerHTML = Data.Description;
-                        GroupDescription.appendChild(GDP);
-                    GroupDetails.appendChild(GroupDescription);
+                            GroupDescription.appendChild(GDP);
+                        }
+                        GroupDetails.appendChild(GroupDescription);
+
                         const GroupTag = document.createElement("div");
                         GroupTag.className = "GroupTag";
+                        {
                             const GTBR = document.createElement("br");
-                        GroupTag.appendChild(GTBR);
+                            GroupTag.appendChild(GTBR);
+
                             const GTLabel = document.createElement("p");
                             GTLabel.innerHTML = Data.Tag;
-                        GroupTag.appendChild(GTLabel);
-                    GroupDetails.appendChild(GroupTag);
-                GroupBottom.appendChild(GroupDetails);
-            Group.appendChild(GroupBottom);
+                            GroupTag.appendChild(GTLabel);
+                        }
+                        GroupDetails.appendChild(GroupTag);
+                    }
+                    GroupBottom.appendChild(GroupDetails);
+                }
+                Group.appendChild(GroupBottom);
+            }
             GroupGrid.appendChild(Group);
         });
     });
 });
 
-function AddPlatform(Name,Container) {
+function AddPlatform(Name, Container) {
     const Platform = document.createElement("div");
     Platform.className = Name;
-        const svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
-        svg.setAttribute("viewBox","0 0 512 512");
-            const path = document.createElementNS("http://www.w3.org/2000/svg","path");
-        svg.appendChild(path);
-    Platform.appendChild(svg);
+    {
+        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("viewBox", "0 0 512 512");
+        {
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            svg.appendChild(path);
+        }
+        Platform.appendChild(svg);
+    }
     Container.appendChild(Platform);
 }

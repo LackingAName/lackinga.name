@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded",function() {
+document.addEventListener("DOMContentLoaded", function () {
     $("html").css("overflow-x", "hidden");
 
     // local server fix
     const Path = document.location.pathname.split("/").pop().split(".");
-    if (document.location.hostname == "127.0.0.1" && Path.length == 1 && Path[0].length > 0)
-        location.href += ".html"
+    if (document.location.hostname === "127.0.0.1" && Path.length === 1 && Path[0].length > 0)
+        location.href += ".html";
 
     const Favicon = top.document.createElement("link");
     Favicon.rel = "icon";
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded",function() {
 function Lerp(From, To, Time) {
     return From + (To - From) * Time;
 }
+
 function WrapAngle(Angle) {
     return ((Angle % 360) + 360) % 360;
 }

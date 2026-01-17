@@ -12,3 +12,6 @@ aoty.css
 
 # not yet
 music.json
+
+# jetbrains
+.idea/*
