@@ -135,15 +135,11 @@ const ULGlitch = async () => {
     UL.style.color = "#fff";
     UL.style.transform = "none";
     UL.style.fontFamily = "Share-TechMono";
-    UL.style.cursor = "pointer";
-    UL.onclick = () => location.href = "/votv";
     ULGlitchDebounce = false;
 
     if (DoULGlitch && !ULGlitchDebounce && document.getElementById("UserLabel")) return;
     UL.style.color = "#fff";
     UL.style.transform = "none";
     UL.style.fontFamily = "Roboto Mono";
-    UL.style.cursor = null;
-    UL.onclick = null;
     UL.innerHTML = Index;
 };

@@ -126,6 +126,4 @@ function LoadUser(Random = true) {
     UL.style.color = "#fff";
     UL.style.transform = "none";
     UL.style.fontFamily = "Roboto Mono";
-    UL.style.cursor = null;
-    UL.onclick = null;
 }
