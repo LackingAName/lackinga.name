@@ -1,229 +1,742 @@
 [
     {
+        "Image": "/images/non/non54.webp",
+        "Name": "H [non54]]",
+        "Date": "2026-01-21 04:00 (began 2026-01-11 ≈20:40)",
+        "Credits": {
+            "Google": [
+                "WebP",
+                "WebM"
+            ],
+            "Mojang": [
+                "Minecraft"
+            ],
+            "Crowbar Collective": [
+                "Black Mesa"
+            ],
+            "Microsoft": [
+                "Windows"
+            ],
+            "Ubisoft": [
+                "WATCH_DOGS"
+            ],
+            "LackingAName": [
+                "pictures",
+                "Minecraft Betterock"
+            ],
+            "VRChat": [
+                "\"Subway simulator\" by たけまる",
+                "\"Padded Room\" by casuaƖgamer",
+                "\"Sponge;)'s Furry Avatars\" by sponge;)"
+            ],
+            "Seagate": [
+                "bad hdds"
+            ]
+        },
+        "Base": true
+    },
+    {
         "Image": "/images/non/non53.webp",
         "Name": "[non53]]",
         "Date": "2026-01-10 18:33",
-        "Credits": "Supraworld / ASTRONEER / Minecraft / Voices of the Void / me! (pictures) / Big Black (Atomizer artwork & lyrics) / A$AP Rocky (lyrics) / Photoshop"
+        "Credits": {
+            "Supra Games": [
+                "Supraworld"
+            ],
+            "System Era": [
+                "ASTRONEER"
+            ],
+            "Mojang": [
+                "Minecraft"
+            ],
+            "MrDrNose": [
+                "Voices of the Void"
+            ],
+            "LackingAName": [
+                "pictures"
+            ],
+            "Big Black": [
+                "\"Atomizer\" artwork & lyrics"
+            ],
+            "A$AP Rocky": [
+                "\"AT.LONG.LAST.A$AP\" lyrics"
+            ]
+        }
     },
     {
         "Image": "/images/non/non52.webp",
         "Name": "Nexus [non52]]",
         "Date": "2026-01-07 19:20",
-        "Credits": "VRChat (Parietal) / albumoftheyear.org (user must hear) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Parietal\" by Zayee"
+            ],
+            "Album of the Year": [
+                "User Must Hear"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non51.webp",
         "Name": "End [non51]]",
         "Date": "2025-12-29 12:50",
-        "Credits": "VLC (datamoshing) / SCP: Containment Breach / Minecraft (assets) / JetBrains (CLion) / me! (hatifier, laq format, picture, Minecraft Betterock) / OpenGL / Vulkan / GLFW / non50 / ImHex / OpenTK / CJ (block texture) / VRChat (FTaC ban [### # raeton, creepy ###]) / Machine Girl (Psychic Attack song title) / Lucy Bedroque (Unmusique art) / C??? (plagiarism) /j / Photoshop",
+        "Credits": {
+            "VLC": [
+                "datamoshing"
+            ],
+            "Undertow Games": [
+                "SCP: Containment Breach"
+            ],
+            "Mojang": [
+                "\"Minecraft\" assets"
+            ],
+            "JetBrains": [
+                "CLion"
+            ],
+            "LackingAName": [
+                "hatifier",
+                "laq (lackingaquad) format",
+                "pictures",
+                "Minecraft Betterock",
+                "non50"
+            ],
+            "Khronos Group": [
+                "OpenGL",
+                "Vulkan"
+            ],
+            "GLFW": [],
+            "WerWolv": [
+                "ImHex"
+            ],
+            "OpenTK": [],
+            "BlownUpByAFirework": [
+                "block texture"
+            ],
+            "VRChat": [
+                "FTaC ban (### # raeton, creepy ###)"
+            ],
+            "Machine Girl": [
+                "\"Psychic Attack\" song title"
+            ],
+            "Lucy Bedroque": [
+                "\"Unmusique\" artwork"
+            ],
+            "C???": [
+                "plagiarism /j"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non50.webp",
         "Name": "Frame contingency [non50]]",
         "Date": "2025-12-06 03:33",
-        "Credits": "VLC (datamoshing) / SCP: Containment Breach / Unity (Editor) / Half-Life 2 (Very Hard Mod) / VRChat (Midwich Elementary - Silent Hill / SCP Site 002 / Cry of Fear - Simon's Apartment / Boeing 747 test / cursor) / femtanyl (BODY THE PISTOL eyes) / Counter-Strike 2 / non40-49 / Photoshop",
+        "Credits": {
+            "VLC": [
+                "datamoshing"
+            ],
+            "Undertow Games": [
+                "SCP: Containment Breach"
+            ],
+            "Unity Technologies": [
+                "editor"
+            ],
+            "DimeX": [
+                "Very Hard Mod"
+            ],
+            "VRChat": [
+                "\"Midwich Elementary - Silent Hill\" by Motley Crue",
+                "\"SCP Site 002\" by Ulgrin Fakie",
+                "\"Cry of Fear - Simon's Apartment\" by LackingAName",
+                "\"Boeing 747 test\" by -MartyMcFly-"
+            ],
+            "femtanyl": [
+                "\"BODY THE PISTOL\" eyes"
+            ],
+            "Valve": [
+                "Half-Life 2",
+                "Counter-Strike 2"
+            ],
+            "LackingAName": [
+                "non40-49"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non49.webp",
         "Name": "[non49]]",
         "Date": "2025-11-16 13:07",
-        "Credits": "Unity (Editor) / SCP: Containment Breach (assets) / JPEG (corruption) / Machine Girl (PsychoWarrior: MG Ultra X) / VRChat / PoolMon / Windows / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor",
+                "logo"
+            ],
+            "Undertow Games": [
+                "SCP: Containment Breach"
+            ],
+            "Joint Photographic Experts Group": [
+                "corruption"
+            ],
+            "Machine Girl": [
+                "\"PsychoWarrior: MG Ultra X\" artwork"
+            ],
+            "VRChat": [
+                "cursor"
+            ],
+            "Microsoft": [
+                "Windows",
+                "PoolMon"
+            ]
+        },
         "Favorite": true
     },
     {
         "Image": "/images/non/non48.webp",
         "Name": "[non48]]",
         "Date": "2025-10-19 23:51",
-        "Credits": "Unity (Editor) / my mom (the price tags) / SCP: Containment Breach (memory access violation) / black midi (lyrics) / Photoshop"
+        "Credits": {
+            "Unity Technologies": [
+                "editor",
+                "logo"
+            ],
+            "my mom": [
+                "the price tags"
+            ],
+            "Undertow Games": [
+                "SCP: Containment Breach"
+            ],
+            "black midi": [
+                "\"Schlagenheim\" lyrics"
+            ]
+        }
     },
     {
         "Image": "/images/non/non47.webp",
         "Name": "[non47]]",
         "Date": "2025-10-17 11:48",
-        "Credits": "SCP: Containment Breach / Unity (Editor) / PoolMon / VRChat (SCP Mini Site / SCP Site: VRChat) / Photoshop",
+        "Credits": {
+            "Undertow Games": [
+                "SCP: Containment Breach"
+            ],
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Microsoft": [
+                "PoolMon"
+            ],
+            "VRChat": [
+                "\"SCP Mini Site\" by branden5002",
+                "\"SCP Site: VRChat\" by TheRestkeeper"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non46.webp",
         "Name": "[non46]]",
         "Date": "2025-10-04 10:41",
-        "Credits": "me! (pictures) / Chat Pile (lyrics) / PoolMon / Photoshop",
+        "Credits": {
+            "LackingAName": [
+                "pictures"
+            ],
+            "Chat Pile": [
+                "\"Mask\" lyrics"
+            ],
+            "Microsoft": [
+                "PoolMon"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non45.webp",
         "Name": "[non45]]",
         "Date": "2025-09-30 18:31",
-        "Credits": "Injury Reserve (By the Time I Get to Phoenix) / Windows / Supraworld / VRChat (I feel small / Murder 4) / Audacity / clipping. / Photoshop",
+        "Credits": {
+            "Injury Reserve": [
+                "\"By the Time I Get to Phoenix\" artwork"
+            ],
+            "Microsoft": [
+                "Windows"
+            ],
+            "Supra Games": [
+                "Supraworld"
+            ],
+            "VRChat": [
+                "\"I feel small\" by Fewiix",
+                "\"Murder 4\" by Jar"
+            ],
+            "Audacity": [],
+            "clipping.": [
+                "\"Mirrorshades pt. 1\" music video"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non44.webp",
         "Name": "Keep going [non44]]",
         "Date": "2025-09-25 16:33",
-        "Credits": "SCP: Secret Laboratory / Supraland / BABBDI / me! (pictures) / Photoshop",
+        "Credits": {
+            "Northwood Studios": [
+                "SCP: Secret Laboratory"
+            ],
+            "Supra Games": [
+                "Supraland"
+            ],
+            "Lemaitre Bros.": [
+                "BABBDI"
+            ],
+            "LackingAName": [
+                "pictures"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non43.webp",
         "Name": "Does it end? [non43]]",
         "Date": "2025-09-19 22:39",
-        "Credits": "Blender / Resonite / Chat Pile (lyrics) / VRChat (cursor) / Unity (Editor) / clipping. / PoolMon / Subnautica / non14 / Photoshop"
+        "Credits": {
+            "Blender Foundation": [
+                "Blender"
+            ],
+            "Yellow Dog Man Studios": [
+                "Resonite"
+            ],
+            "Chat Pile": [
+                "\"Funny Man\" lyrics"
+            ],
+            "VRChat": [
+                "cursor"
+            ],
+            "Unity Technologies": [
+                "editor"
+            ],
+            "clipping.": [
+                "\"Mirrorshades pt. 1\" music video"
+            ],
+            "Microsoft": [
+                "PoolMon"
+            ],
+            "Unknown Worlds Entertainment": [
+                "Subnautica"
+            ],
+            "LackingAName": [
+                "non14"
+            ]
+        }
     },
     {
         "Image": "/images/non/non42.webp",
         "Name": "Stuck [non42]]",
         "Date": "2025-09-10 21:23",
-        "Credits": "Blender / VRChat (cave / cursor) / BookOwnsYou (face) / Fan Control / JOHNNASCUS (lyrics) / Roblox (Identity Fraud) / Reso(knife/nite) / Photoshop"
+        "Credits": {
+            "Blender Foundation": [
+                "Blender"
+            ],
+            "VRChat": [
+                "cave",
+                "cursor"
+            ],
+            "BookOwnsYou": [
+                "face"
+            ],
+            "Rem0o": [
+                "Fan Control"
+            ],
+            "JOHNNASCUS": [
+                "\"Trapped\" lyrics"
+            ],
+            "Roblox": [
+                "\"Identity Fraud\" by Team M0THERB0ARD"
+            ],
+            "Yellow Dog Man Studios": [
+                "Reso(knife/nite)"
+            ]
+        }
     },
     {
         "Image": "/images/non/non41.webp",
         "Name": "[non41]]",
         "Date": "2025-09-07 21:10",
-        "Credits": "Windows / YouTube / Arch Linux / Photoshop"
+        "Credits": {
+            "Microsoft": [
+                "Windows"
+            ],
+            "Google": [
+                "YouTube"
+            ],
+            "Levente Polyak": [
+                "Arch Linux"
+            ]
+        }
     },
     {
         "Image": "/images/non/non40.webp",
         "Name": "[non40]]",
         "Date": "2025-08-29 16:11",
-        "Credits": "VRChat (Crystal Lake Water Park) / dälek (Absence) / Jay (picture) / Voices of the Void  / BookOwnsYou / Death Grips / non1-39 / albumoftheyear.org / J CYN (Blood Stasis) / Task Manager / EAC (logo) / theneedledrop (face) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Crystal Lake Water Park\" by Synthos"
+            ],
+            "dälek": [
+                "\"Absence\" artwork"
+            ],
+            "BLUECHEESE": [
+                "pictures"
+            ],
+            "MrDrNose": [
+                "Voices of the Void"
+            ],
+            "BookOwnsYou": [
+                "cameo"
+            ],
+            "Death Grips": [
+                "\"Flies\" music video"
+            ],
+            "LackingAName": [
+                "non1-39"
+            ],
+            "Album of the Year": [],
+            "J CYN": [
+                "\"Blood Stasis\" artwork"
+            ],
+            "David Plummer": [
+                "Task Manager"
+            ],
+            "Epic Games": [
+                "\"Easy Anti-Cheat\" logo"
+            ],
+            "theneedledrop": [
+                "face"
+            ]
+        },
         "Favorite": true
     },
     {
         "Image": "/images/non/non39.webp",
         "Name": "! [non39]]",
         "Date": "2025-08-23 17:46",
-        "Credits": "VRChat (TF2 2Fort) / Team Fortress 2 (assets) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"TF2 2Fort\" by littlewhinging"
+            ],
+            "Valve": [
+                "\"Team Fortress 2\" assets"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non38.webp",
         "Name": "[non38]]",
         "Date": "2025-08-20 01:25",
-        "Credits": "VRChat (Interstices, Intertwined / cursor) / PoolMon / dälek (Absence) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Interstices, Intertwined\" by chemicalcrux",
+                "cursor"
+            ],
+            "Microsoft": [
+                "PoolMon"
+            ],
+            "dälek": [
+                "\"Absence\" artwork"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non37.webp",
         "Name": "[non37]]",
         "Date": "2025-08-17 05:31",
-        "Credits": "ASTRONEER / clipping. (Forever War) / VRChat (cursor) / Photoshop",
+        "Credits": {
+            "System Era": [
+                "ASTRONEER"
+            ],
+            "clipping.": [
+                "\"Forever War\" artwork"
+            ],
+            "VRChat": [
+                "cursor"
+            ]
+        },
         "Favorite": true
     },
     {
         "Image": "/images/non/non36.webp",
         "Name": "We're sorry! Something went wrong! [non36]]",
         "Date": "2025-08-15 23:30",
-        "Credits": "VRChat (errorworld.vrcw / cursor) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Error World\"",
+                "cursor"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non35.webp",
         "Name": "3 keycards [non35]]",
         "Date": "2025-08-09 00:07",
-        "Credits": "VRChat (Stillwoods Execution / cursor) / JPEGMAFIA (Veteran / lyrics) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Stillwoods Execution\" by Oerlikon",
+                "cursor"
+            ],
+            "JPEGMAFIA": [
+                "\"DJ Snitch Bitch Interlude\" lyrics"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non34.webp",
         "Name": "[non34]]",
         "Date": "2025-08-05 21:06",
-        "Credits": "ASTRONEER / clipping. (Visions of Bodies Being Burned) / VRChat (cursor) / Photoshop"
+        "Credits": {
+            "System Era": [
+                "ASTRONEER"
+            ],
+            "clipping.": [
+                "\"Visions of Bodies Being Burned\" artwork"
+            ],
+            "VRChat": [
+                "cursor"
+            ]
+        }
     },
     {
         "Image": "/images/non/non33.webp",
         "Name": "chaos [non33]]",
         "Date": "2025-08-01 08:54",
-        "Credits": "VRChat (SlashCo / cursor) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"SlashCo\" by Mantibro",
+                "cursor"
+            ]
+        }
     },
     {
         "Image": "/images/non/non32.webp",
         "Name": "Not the real one [non32]]",
         "Date": "2025-07-20 00:14",
-        "Credits": "VRChat (website / SlashCo) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"SlashCo\" by Mantibro",
+                "website"
+            ]
+        }
     },
     {
         "Image": "/images/non/non31.5.webp",
         "Name": "Loads from Bytes / Not the real one [non31.5]]",
         "Date": "2025-07-20 00:26",
-        "Credits": "Unity (Editor) / VRChat (website / SlashCo) / VSC / PoolMon / Process Monitor / Autoruns / Photoshop"
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "VRChat": [
+                "\"SlashCo\" by Mantibro",
+                "website"
+            ],
+            "Microsoft": [
+                "Visual Studio Code",
+                "PoolMon"
+            ],
+            "Mark Russinovich": [
+                "Process Monitor",
+                "Autoruns"
+            ]
+        }
     },
     {
         "Image": "/images/non/non31.webp",
         "Name": "Loads from Bytes [non31]]",
         "Date": "2025-07-18 02:39",
-        "Credits": "Unity (Editor) / VSC / PoolMon / Process Monitor / Autoruns / Photoshop"
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Microsoft": [
+                "Visual Studio Code",
+                "PoolMon"
+            ],
+            "Mark Russinovich": [
+                "Process Monitor",
+                "Autoruns"
+            ]
+        }
     },
     {
         "Image": "/images/non/non30.webp",
         "Name": "these are the negative and irrational thoughts of johnnascus [non30]]",
         "Date": "2025-07-11 23:52",
-        "Credits": "Voices of the Void / CJ (having his camera glitch) / Clipse (Let God Sort Em Out) / STOMACH BOOK (GOODNIGHT HYPNOPOMP) / Xbox / Photoshop",
+        "Credits": {
+            "MrDrNose": [
+                "Voices of the Void"
+            ],
+            "BlownUpByAFirework": [
+                "having his camera glitch"
+            ],
+            "Clipse": [
+                "\"Let God Sort Em Out\" artwork"
+            ],
+            "STOMACH BOOK": [
+                "\"GOODNIGHT HYPNOPOMP\" artwork"
+            ],
+            "Microsoft": [
+                "Xbox"
+            ]
+        },
         "Favorite": true
     },
     {
         "Image": "/images/non/non29.webp",
         "Name": "[non29]]",
         "Date": "2025-07-06 22:49",
-        "Credits": "VRChat (SlashCo) / Windows (files) / Xbox (blank profile picture) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"SlashCo\" by Mantibro"
+            ],
+            "Microsoft": [
+                "Windows",
+                "Xbox"
+            ]
+        }
     },
     {
         "Image": "/images/non/non28.webp",
         "Name": "[non28]]",
         "Date": "2025-07-05 18:51",
-        "Credits": "Unity (Editor) / Windows (files) / Xbox (blank profile picture) / Photoshop"
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Microsoft": [
+                "Windows",
+                "Xbox"
+            ]
+        }
     },
     {
         "Image": "/images/non/non27.webp",
         "Name": "Thank God It Was Arch Linux [non27]]",
         "Date": "2025-06-28 18:49",
-        "Credits": "Windows / JPEGXL (corruption) / JPEGMAFIA (Black Ben Carson) / Photoshop"
+        "Credits": {
+            "Microsoft": [
+                "Windows"
+            ],
+            "Joint Photographic Experts Group": [
+                "\"JPEGXL\" corruption"
+            ],
+            "JPEGMAFIA": [
+                "\"Black Ben Carson\" artwork"
+            ]
+        }
     },
     {
         "Image": "/images/non/non26.webp",
         "Name": "[non26]]",
         "Date": "2025-06-24 21:09",
-        "Credits": "VRChat (SlashCo / assets) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"SlashCo\" by Mantibro",
+                "assets"
+            ]
+        }
     },
     {
         "Image": "/images/non/non25.webp",
         "Name": "warning/advisory [non25]]",
         "Date": "2025-06-22 18:05",
-        "Credits": "me! (pictures) / Photoshop"
+        "Credits": {
+            "LackingAName": [
+                "pictures"
+            ]
+        }
     },
     {
         "Image": "/images/non/non24.webp",
         "Name": "Who Is Ome Tv [non24]]",
         "Date": "2025-06-19 17:07",
-        "Credits": "ome.tv / JOHNNASCUS (Upgrade! (untitled_0043)) / Jay (face) / Photoshop"
+        "Credits": {
+            "ome.tv": [],
+            "JOHNNASCUS": [
+                "\"Upgrade! [untitled_0043]]\" artwork"
+            ],
+            "BLUECHEESE": [
+                "face"
+            ]
+        }
     },
     {
         "Image": "/images/non/non23.webp",
         "Name": "^•ω•^ [non23]]",
         "Date": "2025-06-17 13:38",
-        "Credits": "VRChat (Magnetize) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Magnetize\" by Juice․․․"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non22.webp",
         "Name": "i could never forget my favorite color [non22]]",
         "Date": "2025-06-14 14:05",
-        "Credits": "Subnautica / CJ (face) / Jay (fnaf image) / Linux / VRChat (gift badges) / Windows / VSC / Photoshop"
+        "Credits": {
+            "Unknown Worlds Entertainment": [
+                "Subnautica"
+            ],
+            "BlownUpByAFirework": [
+                "face"
+            ],
+            "BLUECHEESE": [
+                "fnaf image"
+            ],
+            "Linus Torvalds": [
+                "Linux"
+            ],
+            "VRChat": [
+                "gift badges"
+            ],
+            "Microsoft": [
+                "Windows",
+                "Visual Studio Code"
+            ]
+        }
     },
     {
         "Image": "/images/non/non21.webp",
         "Name": "Ts so lance [non21]]",
         "Date": "2025-06-12 17:15",
-        "Credits": "VRChat (Antiheat's Apartment) / CJ (face) / Jay (fnaf image) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"Antiheat's Apartment\" by Antiheat"
+            ],
+            "BlownUpByAFirework": [
+                "face"
+            ],
+            "BLUECHEESE": [
+                "fnaf image"
+            ]
+        }
     },
     {
         "Image": "/images/non/non20.webp",
         "Name": "forgot my favorite color [non20]]",
         "Date": "2025-06-06 08:13",
-        "Credits": "VRChat (Murder 4) / me! (pictures) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Murder 4\" by Jar"
+            ],
+            "LackingAName": [
+                "pictures"
+            ]
+        },
         "Favorite": true,
         "Base": true
     },
@@ -231,40 +744,82 @@
         "Image": "/images/non/non19.webp",
         "Name": "[non19]]",
         "Date": "2025-06-05 03:35",
-        "Credits": "VRChat (this is a forest) / BookOwnsYou / CJ (mouse) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"this is a forest\" by toomanychoices"
+            ],
+            "BookOwnsYou": [
+                "cameo"
+            ],
+            "BlownUpByAFirework": [
+                "the mouse"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non18.webp",
         "Name": "[non18]]",
         "Date": "2025-05-30 21:21",
-        "Credits": "Unity (Editor) / Paint.NET",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ]
+        },
+        "Software": "Paint.NET",
         "Base": true
     },
     {
         "Image": "/images/non/non17.webp",
         "Name": "[non17]]",
         "Date": "2025-05-17 16:42",
-        "Credits": "Minecraft / Paint.NET",
+        "Credits": {
+            "Mojang": [
+                "Minecraft"
+            ]
+        },
+        "Software": "Paint.NET",
         "Base": true
     },
     {
         "Image": "/images/non/non16.webp",
         "Name": "eastern [non16]]",
         "Date": "2025-05-15 09:07",
-        "Credits": "Blender / VRChat (assets) / Photoshop"
+        "Credits": {
+            "Blender Foundation": [
+                "Blender"
+            ],
+            "VRChat": [
+                "assets"
+            ]
+        }
     },
     {
         "Image": "/images/non/non15.webp",
         "Name": "update [non15]]",
         "Date": "2025-05-10 09:49",
-        "Credits": "lackinga.name / JOHNNASCUS / VRChat (assets) / Photoshop"
+        "Credits": {
+            "LackingAName": [
+                "lackinga.name"
+            ],
+            "JOHNNASCUS": [
+                "\"Plague Cross\" artwork",
+                "inspiration"
+            ],
+            "VRChat": [
+                "website assets"
+            ]
+        }
     },
     {
         "Image": "/images/non/non14.webp",
         "Name": "[non14]]",
         "Date": "2025-05-03 17:35",
-        "Credits": "VRChat (Stormy Cave) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Stormy Cave\" by Sacchan"
+            ]
+        },
         "Base": true,
         "Favorite": true
     },
@@ -272,61 +827,127 @@
         "Image": "/images/non/non13.webp",
         "Name": "[non13]]",
         "Date": "2025-05-01 17:45",
-        "Credits": "VRChat (Cry of Fear - Simon's Apartment) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "\"Cry of Fear - Simon's Apartment\" by LackingAName"
+            ]
+        }
     },
     {
         "Image": "/images/non/non12.webp",
         "Name": "drawer [non12]]",
         "Date": "2025-04-16 14:58",
-        "Credits": "VRChat (Botanophobia) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Botanophobia\" by Vygnarmenshnarf"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non11.webp",
         "Name": "[non11]]",
         "Date": "2025-02-01 15:41",
-        "Credits": "Roblox (Studio) / Photoshop"
+        "Credits": {
+            "Roblox": [
+                "studio"
+            ],
+            "InterludeToast & LackingAName": [
+                "Interrogation"
+            ]
+        }
     },
     {
         "Image": "/images/non/non10.webp",
         "Name": "[non10]]",
         "Date": "2025-01-17 17:35",
-        "Credits": "CJ (base picture) / Photoshop",
+        "Credits": {
+            "BlownUpByAFirework": [
+                "base picture"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non9.webp",
         "Name": "sync [non9]]",
         "Date": "2025-01-15 16:45",
-        "Credits": "VRChat (Cry of Fear - Simon's Apartment) / Photoshop",
+        "Credits": {
+            "VRChat": [
+                "\"Cry of Fear - Simon's Apartment\" by LackingAName"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non1.webp",
         "Name": "yea [non1]]",
         "Date": "2024-12-10 22:46",
-        "Credits": "Unity (Editor) / VIVE / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "HTC": [
+                "\"VIVE\" logo"
+            ],
+            "LackingAName": [
+                "VIVE Protogen"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non8.webp",
         "Name": "[non8]]",
         "Date": "2025-01-08 18:24",
-        "Credits": "Roblox (Studio) / Photoshop",
+        "Credits": {
+            "Roblox": [
+                "studio"
+            ],
+            "Dissonified & LackingAName": [
+                "The Retro Squidly"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non7.webp",
         "Name": "beanworld [non7]]",
         "Date": "2024-12-22 18:59",
-        "Credits": "Blender / Photoshop",
+        "Credits": {
+            "Blender Foundation": [
+                "Blender"
+            ],
+            "LackingAName": [
+                "beanworld"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non6.webp",
         "Name": "[non6]]",
         "Date": "2024-12-14 03:12",
-        "Credits": "Unity (Editor) / Nine Inch Nails (The Fragile cover art inspiration) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Nine Inch Nails": [
+                "\"The Fragile\" cover art inspiration"
+            ],
+            "Team Psykskallar": [
+                "Cry of Fear"
+            ],
+            "LackingAName": [
+                "Proto of Fear"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ]
+        },
         "Base": true
     },
     { "Separator": "director's cut: lost or not included" },
@@ -334,115 +955,281 @@
         "Image": "/images/non/nonl1.webp",
         "Name": "[nonl1]]",
         "Date": "2024-12-10 22:17",
-        "Credits": "Unity (Editor) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/nonl2.webp",
         "Name": "[nonl2]]",
         "Date": "2024-12-10 22:35",
-        "Credits": "Unity (Editor) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "LackingAName": [
+                "beanworld"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non2.webp",
         "Name": "[non2]]",
         "Date": "2024-12-10 22:50",
-        "Credits": "Unity (Editor) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non3.webp",
         "Name": "[non3]]",
         "Date": "2024-12-10 22:59",
-        "Credits": "Unity (Editor) / Nine Inch Nails (The Fragile cover art inspiration / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Nine Inch Nails": [
+                "\"The Fragile\" cover art inspiration"
+            ],
+            "Ubisoft": [
+                "\"WATCH_DOGS\" logo"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non4.webp",
         "Name": "[non4]]",
         "Date": "2024-12-10 23:05",
-        "Credits": "Unity (Editor) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ],
+            "Mojang": [
+                "\"Minecraft\" grass block"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/non5.webp",
         "Name": "[non5]]",
         "Date": "2024-12-10 23:33",
-        "Credits": "Unity (Editor) / Xbox / JPEGMAFIA (Black Ben Carson) / Team Psykskallar / Windows / KineMaster (watermark) / YouTube / VRChat / CJ (powerpoint presentation) / Photoshop",
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "Microsoft": [
+                "Xbox",
+                "Windows"
+            ],
+            "JPEGMAFIA": [
+                "\"Black Ben Carson\" artwork"
+            ],
+            "Team Psykskallar": [],
+            "KineMaster Corporation": [
+                "\"Made with KINEMASTER\" watermark"
+            ],
+            "Google": [
+                "YouTube"
+            ],
+            "VRChat": [
+                "ui"
+            ],
+            "BlownUpByAFirework": [
+                "powerpoint presentation"
+            ],
+            "Intel Corporation": [
+                "logo"
+            ],
+            "Nukude": [
+                "NKD Protogen"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/nonl3.webp",
         "Name": "[nonl3]]",
         "Date": "2024-12-20 19:31",
-        "Credits": "VRChat (assets) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "assets"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl4.webp",
         "Name": "I don't know what else to tell you [nonl4]]",
         "Date": "2024-12-20 19:45",
-        "Credits": "VRChat (assets) / Windows / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "assets"
+            ],
+            "Microsoft": [
+                "File Explorer"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl5.webp",
         "Name": "[nonl5]]",
         "Date": "2024-12-25 15:44",
-        "Credits": "Unity (Editor)"
+        "Credits": {
+            "Unity Technologies": [
+                "editor"
+            ],
+            "LackingAName": [
+                "\"catacombs\" thumbnail",
+                "\"Cry of Fear - Simon's House\" thumbnail",
+                "beanworld"
+            ],
+            "Team Psykskallar": [
+                "Cry of Fear"
+            ],
+            "Cubusonic": [
+                "art"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl6.webp",
         "Name": "[nonl6]]",
         "Date": "2024-12-27 21:06",
-        "Credits": "me! (samsung and iphone cameras) / Photoshop"
+        "Credits": {
+            "Team Psykskallar": [
+                "Cry of Fear"
+            ],
+            "LackingAName": [
+                "samsung and iphone cameras",
+                "Proto of Fear"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl7.webp",
         "Name": "[nonl7]]",
         "Date": "2024-12-27 23:18",
-        "Credits": "Blender / Photoshop",
+        "Credits": {
+            "Blender Foundation": [
+                "Blender"
+            ],
+            "Team Psykskallar": [
+                "Cry of Fear"
+            ],
+            "LackingAName": [
+                "Proto of Fear"
+            ]
+        },
         "Base": true
     },
     {
         "Image": "/images/non/nonl8.webp",
         "Name": "[nonl8]]",
         "Date": "2024-12-28 10:59",
-        "Credits": "VRChat (website) / Photoshop"
+        "Credits": {
+            "VRChat": [
+                "website"
+            ],
+            "Team Psykskallar": [
+                "Cry of Fear"
+            ],
+            "LackingAName": [
+                "Proto of Fear"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl13.webp",
         "Name": "but who's ur favorite color [nonl13]]",
         "Date": "2025-05-17 18:04",
-        "Credits": "VRChat (website) / Photoshop or Paint.NET (80% sure photoshop)"
+        "Credits": {
+            "VRChat": [
+                "website",
+                "\"Ártica's Ultimate Deira\" by Ártica"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl15.webp",
         "Name": "i gotta get in this mindset [nonl15]]",
         "Date": "2025-05-22 18:46",
-        "Credits": "Cider / Photoshop or Paint.NET (idk)"
+        "Credits": {
+            "Cider Collective": [
+                "Cider"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl16.webp",
         "Name": "restrictive [nonl16]]",
         "Date": "2025-06-19 18:31",
-        "Credits": "Jay (images) / Photoshop"
+        "Credits": {
+            "BLUECHEESE": [
+                "pictures"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl17.webp",
         "Name": "july [nonl17]]",
         "Date": "2025-06-20 21:21",
-        "Credits": "clipping. (midcity / Face) / Clipse (Let God Sort Em Out) / STOMACH BOOK (GOODNIGHT HYPNOPOMP) / Photoshop"
+        "Credits": {
+            "clipping.": [
+                "\"midcity\" artwork",
+                "\"Face\" artwork"
+            ],
+            "Clipse": [
+                "\"Let God Sort Em Out\" artwork"
+            ],
+            "STOMACH BOOK": [
+                "\"GOODNIGHT HYPNOPOMP\" artwork"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl18.webp",
         "Name": "july 2 [nonl18]]",
         "Date": "2025-06-20 21:36",
-        "Credits": "Jay (pictures) / me! (pictures) / Clipse (Let God Sort Em Out) / STOMACH BOOK (GOODNIGHT HYPNOPOMP) / Photoshop"
+        "Credits": {
+            "BLUECHEESE": [
+                "pictures"
+            ],
+            "LackingAName": [
+                "pictures"
+            ],
+            "Clipse": [
+                "\"Let God Sort Em Out\" artwork"
+            ],
+            "STOMACH BOOK": [
+                "\"GOODNIGHT HYPNOPOMP\" artwork"
+            ]
+        }
     },
     {
         "Image": "/images/non/nonl19.webp",
         "Name": "[nonl19]]",
         "Date": "2025-07-21 07:37",
-        "Credits": "Tyler, The Creator (DON'T TAP THE GLASS) / Photoshop"
+        "Credits": {
+            "Tyler, The Creator": [
+                "\"DON'T TAP THE GLASS\" artwork"
+            ]
+        }
     }
 ]
