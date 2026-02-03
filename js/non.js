@@ -36,22 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				nonImage.className = Fav;
 				nonImage.setAttribute("onclick", "window.open(src,'_blank');");
 				nonImage.src = Data.Image;
-
-				if (Data.Image2) {
-					const nonImageContainer = document.createElement("div");
-					{
-						nonImageContainer.appendChild(nonImage);
-
-						const nonImage2 = document.createElement("img");
-						nonImage2.className = Fav;
-						nonImage2.setAttribute("onclick", "window.open(src,'_blank');");
-						nonImage2.src = Data.Image2;
-						nonImageContainer.appendChild(nonImage2);
-					}
-					nonContainer.appendChild(nonImageContainer);
-				} else {
-					nonContainer.appendChild(nonImage);
-				}
+				nonContainer.appendChild(nonImage);
 
 				nonContainer.innerHTML += Data.Name + "<br>" + Data.Date + "<br>";
 
