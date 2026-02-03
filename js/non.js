@@ -36,19 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
 				nonImage.className = Fav;
 				nonImage.setAttribute("onclick", "window.open(src,'_blank');");
 				nonImage.src = Data.Image;
-				nonContainer.appendChild(nonImage);
+
+				if (Data.Image2) {
+					const nonImageContainer = document.createElement("div");
+					{
+						nonImageContainer.appendChild(nonImage);
+
+						const nonImage2 = document.createElement("img");
+						nonImage2.className = Fav;
+						nonImage2.setAttribute("onclick", "window.open(src,'_blank');");
+						nonImage2.src = Data.Image2;
+						nonImageContainer.appendChild(nonImage2);
+					}
+					nonContainer.appendChild(nonImageContainer);
+				} else {
+					nonContainer.appendChild(nonImage);
+				}
 
 				nonContainer.innerHTML += Data.Name + "<br>" + Data.Date + "<br>";
 
-				const Credits = document.createElement("span")
-				Credits.style.cursor = "pointer";
-				Credits.addEventListener("click", function () { CreditsPopup(Data.Credits); });
-				{
-					const CreditsLabel = document.createElement("b");
-					CreditsLabel.innerHTML = "view credits";
-					Credits.appendChild(CreditsLabel);
+				if (Data.Credits) {
+					const Credits = document.createElement("span")
+					Credits.style.cursor = "pointer";
+					Credits.addEventListener("click", function () { CreditsPopup(Data.Credits); });
+					{
+						const CreditsLabel = document.createElement("b");
+						CreditsLabel.innerHTML = "view credits";
+						Credits.appendChild(CreditsLabel);
+					}
+					nonContainer.appendChild(Credits);
 				}
-				nonContainer.appendChild(Credits);
 
 				if (Data.Base) {
 					const Base = document.createElement("span")

@@ -8,13 +8,13 @@
     {
         "Name": "Batch",
         "Image": "batch.webp",
-        "Words": "very useful if ur not on linux",
+        "Words": "very useful",
         "Know": "yea"
     },
     {
         "Name": "C--",
         "Image": "c--.svg",
-        "Words": "idfk lmao",
+        "Words": "lmao",
         "Know": "no wth"
     },
     {
@@ -26,7 +26,7 @@
     {
         "Name": "C++",
         "Image": "c++.svg",
-        "Words": "use c",
+        "Words": "use c, ts a dumpster &#128293;",
         "Know": "lil bit 2"
     },
     {
@@ -42,6 +42,12 @@
         "Words": "ez & cool :)",
         "Know": "yuh",
         "Show": "yuhuh"
+    },
+    {
+        "Name": "D",
+        "Image": "d.svg",
+        "Words": "c, but maybe better idk",
+        "Know": "no"
     },
     {
         "Name": "F#",
