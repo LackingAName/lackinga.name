@@ -48,6 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
                             WNLink.appendChild(WNLabel);
                         }
                         WorldName.appendChild(WNLink);
+
+                        if (Data.Devlog) {
+                            const DevlogLink = document.createElement("a");
+                            DevlogLink.href = "/vrchat/devlog?" + Data.Devlog;
+                            {
+                                const DevlogLabel = document.createElement("h4");
+                                DevlogLabel.innerHTML = "devlog";
+                                DevlogLink.appendChild(DevlogLabel);
+                            }
+                            WorldName.appendChild(DevlogLink);
+                        }
                     }
                     WorldDetails.appendChild(WorldName);
                 }
