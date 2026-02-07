@@ -165,10 +165,10 @@
             {
                 "Name": "who",
                 "Description": "dip if it was actually being worked on and it was different",
-                "Image": "/images/noimage.webp",
+                "Image": "/images/vrchat/w21.webp",
                 "URL": "",
                 "Visibility": "",
-                "Platforms": [],
+                "Platforms": ["PC","A"],
                 "Devlog": "who"
             }
         ]
