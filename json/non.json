@@ -1,22 +1,88 @@
 [
     {
+        "Image": "/images/non/non60.webp",
+        "Name": "[non60]]",
+        "Date": "2026-02-14 19:47 (began ≈2026-02-12)",
+        "Credits": {
+            "underscores": [
+                "\"Wallsocket\" artwork"
+            ],
+            "femtanyl": [
+                "\"MAN BITES DOG\" artwork"
+            ],
+            "My Chemical Romance": [
+                "\"The Ghost of You\" spectrogram (i did the spectrogram but yk)"
+            ],
+            "Radiohead": [
+                "\"15 Step\" lyrics"
+            ],
+            "LackingAName": [
+                "non50-59"
+            ],
+            "Album of the Year": [
+                "Critic & User Must Hear"
+            ],
+            "VRChat": [
+                "\"Terraria: The Underworld\" by cwsaturn",
+                "\"Murder 4\" by Jar",
+                "\"who\" by LackingAName",
+                "\"Amethyst Bone Forest\" by LittleAO",
+                "\"SlashCo\" by Mantibro",
+                "\"Idle Ores\" by TheCatfish"
+            ]
+        },
+        "Base": true,
+        "Favorite": true
+    },
+    {
+        "Image": "/images/non/non59.webp",
+        "Name": "🞬🗙🯀 [non59]]",
+        "Date": "2026-02-08 17:34",
+        "Credits": {
+            "VRChat": [
+                "\"Padded Room\" by casuaƖgamer"
+            ]
+        }
+    },
+    {
         "Image": "/images/non/non58.webp",
         "Name": "Full speed [non58]]",
-        "Date": "2026-02-06 15:45"
+        "Date": "2026-02-06 15:45",
+        "Credits": {
+            "Coniferous Forest": [
+                "\"Sable\" image"
+            ],
+            "VRChat": [
+                "\"Amethyst Bone Forest\" by LittleAO",
+                "\"Murder 4\" by Jar"
+            ]
+        },
+        "Base": true
     },
     {
         "Image": "/images/non/non57.webp",
         "Name": "a [non57]]",
-        "Date": "2026-02-04 17:38"
+        "Date": "2026-02-04 17:38",
+        "Credits": {
+            "Sodus Anthony": [
+                "cameo"
+            ]
+        }
     },
     {
         "Image": "/images/non/non56.webp",
         "Name": "[non56]]",
-        "Date": "2026-02-03 10:00"
+        "Date": "2026-02-03 10:00",
+        "Credits": {
+            "VRChat": [
+                "\"The Horror BackRooms\" by Chatliner"
+            ]
+        },
+        "Base": true
     },
     {
-        "Image": "/images/non/non55.webp",
-        "Name": "waterfall [non55]]",
+        "Image": "/images/noimage.webp",
+        "Name": "(to be replaced) [non55]]",
         "Date": "2026-02-02 20:41"
     },
     {
@@ -82,7 +148,8 @@
             "A$AP Rocky": [
                 "\"AT.LONG.LAST.A$AP\" lyrics"
             ]
-        }
+        },
+        "Favorite": true
     },
     {
         "Image": "/images/non/non52.webp",
