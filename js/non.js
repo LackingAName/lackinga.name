@@ -5,7 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     Container = document.getElementById("Container");
 
     $.getJSON("/json/non.json", function (JSON) {
-        document.getElementById("nonCount").innerHTML = (Object.keys(JSON).length - 16).toString().padStart(4, "0");
+		const nonCount = Object.keys(JSON).length - 16; // 16 is the extra data
+        document.getElementById("nonCount").innerHTML = nonCount.toString().padStart(4, "0");
+
+		if (nonCount % 2 == 1) { // maintain horizontal order by checking if the count is odd
+			// append an empty container to fix it :)
+			const nonContainer = document.createElement("div");
+			Grid.appendChild(nonContainer);
+		}
 
         $.each(JSON, function (_, Data) {
             if (Data.Separator) {

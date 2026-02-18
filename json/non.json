@@ -1,7 +1,57 @@
 [
     {
+        "Image": "/images/non/non61.webp",
+        "Name": "[non61]]",
+        "Date": "2026-02-18 17:02 (began 2026-02-17 ≈20:30)",
+        "Credits": {
+            "FFmpeg": [
+                "video corruption",
+                "fragmenting mp4s"
+            ],
+            "\"VLC media player\" by VideoLAN": [
+                "datamoshing"
+            ],
+            "Shadow_hawk": [
+                "Toaster Arena"
+            ],
+            "Purple": [
+                "using the site below to convert an audio file to an image"
+            ],
+            "PortalRunner": [
+                "convert.to.it"
+            ],
+            "underscores": [
+                "\"Uncanny long arms\" lyrics"
+            ],
+            "BlownUpByAFirework": [
+                "appearance"
+            ],
+            "BookOwnsYou": [
+                "appearance"
+            ],
+            "LackingAName": [
+                "non55"
+            ],
+            "Mojang Studios": [
+                "Minecraft"
+            ],
+            "Microsoft Corporation" : [
+                "Xbox"
+            ],
+            "Discord": [],
+            "hCaptcha": [],
+            "Cloudflare, Inc.": [
+                "gateway timeout"
+            ],
+            "VRChat": [
+                "\"Underwater House 2.0\" by kasvav"
+            ]
+        },
+        "Base": true
+    },
+    {
         "Image": "/images/non/non60.webp",
-        "Name": "[non60]]",
+        "Name": "Then a sheer drop [non60]]",
         "Date": "2026-02-14 19:47 (began ≈2026-02-12)",
         "Credits": {
             "underscores": [
@@ -11,7 +61,7 @@
                 "\"MAN BITES DOG\" artwork"
             ],
             "My Chemical Romance": [
-                "\"The Ghost of You\" spectrogram (i did the spectrogram but yk)"
+                "\"The Ghost of You\" spectrogram"
             ],
             "Radiohead": [
                 "\"15 Step\" lyrics"
@@ -31,8 +81,7 @@
                 "\"Idle Ores\" by TheCatfish"
             ]
         },
-        "Base": true,
-        "Favorite": true
+        "Base": true
     },
     {
         "Image": "/images/non/non59.webp",
@@ -65,7 +114,7 @@
         "Date": "2026-02-04 17:38",
         "Credits": {
             "Sodus Anthony": [
-                "cameo"
+                "appearance"
             ]
         }
     },
@@ -81,9 +130,12 @@
         "Base": true
     },
     {
-        "Image": "/images/noimage.webp",
-        "Name": "(to be replaced) [non55]]",
-        "Date": "2026-02-02 20:41"
+        "Image": "/images/non/non55.webp",
+        "Name": "waterfall [non55]]",
+        "Date": "2026-02-02 20:41",
+        "Credits": {
+            "i choose not to": []
+        }
     },
     {
         "Image": "/images/non/non54.webp",
@@ -94,13 +146,13 @@
                 "\"WebP\" logo",
                 "\"WebM\" logo"
             ],
-            "Mojang": [
+            "Mojang Studios": [
                 "Minecraft"
             ],
             "Crowbar Collective": [
                 "Black Mesa"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer"
             ],
             "Ubisoft": [
@@ -132,7 +184,7 @@
             "System Era": [
                 "ASTRONEER"
             ],
-            "Mojang": [
+            "Mojang Studios": [
                 "Minecraft"
             ],
             "MrDrNose": [
@@ -170,13 +222,13 @@
         "Name": "End [non51]]",
         "Date": "2025-12-29 12:50",
         "Credits": {
-            "VLC": [
+            "\"VLC media player\" by VideoLAN": [
                 "datamoshing"
             ],
             "Undertow Games": [
                 "SCP: Containment Breach"
             ],
-            "Mojang": [
+            "Mojang Studios": [
                 "\"Minecraft\" assets"
             ],
             "JetBrains": [
@@ -221,7 +273,7 @@
         "Name": "Frame contingency [non50]]",
         "Date": "2025-12-06 03:33",
         "Credits": {
-            "VLC": [
+            "\"VLC media player\" by VideoLAN": [
                 "datamoshing"
             ],
             "Undertow Games": [
@@ -264,16 +316,13 @@
             "Undertow Games": [
                 "SCP: Containment Breach"
             ],
-            "Joint Photographic Experts Group": [
-                "corruption"
-            ],
             "Machine Girl": [
                 "\"PsychoWarrior: MG Ultra X\" artwork"
             ],
             "VRChat": [
                 "cursor"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Windows",
                 "PoolMon"
             ]
@@ -311,7 +360,7 @@
             "Unity Technologies": [
                 "editor"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "PoolMon"
             ],
             "VRChat": [
@@ -332,7 +381,7 @@
             "Chat Pile": [
                 "\"Mask\" lyrics"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "PoolMon"
             ]
         },
@@ -346,7 +395,7 @@
             "Injury Reserve": [
                 "\"By the Time I Get to Phoenix\" artwork"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer"
             ],
             "Supra Games": [
@@ -406,7 +455,7 @@
             "clipping.": [
                 "\"Mirrorshades pt. 1\" music video"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "PoolMon"
             ],
             "Unknown Worlds Entertainment": [
@@ -430,7 +479,7 @@
                 "cursor"
             ],
             "BookOwnsYou": [
-                "face"
+                "appearance"
             ],
             "Rem0o": [
                 "Fan Control"
@@ -451,7 +500,7 @@
         "Name": "[non41]]",
         "Date": "2025-09-07 21:10",
         "Credits": {
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer"
             ],
             "Google": [
@@ -480,7 +529,7 @@
                 "Voices of the Void"
             ],
             "BookOwnsYou": [
-                "cameo"
+                "appearance"
             ],
             "Death Grips": [
                 "\"Flies\" music video"
@@ -499,7 +548,7 @@
                 "\"Easy Anti-Cheat\" logo"
             ],
             "theneedledrop": [
-                "face"
+                "appearance"
             ]
         },
         "Favorite": true
@@ -516,7 +565,7 @@
             "Valve": [
                 "\"Team Fortress 2\" assets"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "warning symbol"
             ]
         },
@@ -532,7 +581,7 @@
                 "\"Dust\" by vzViolet",
                 "cursor"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "PoolMon"
             ],
             "dälek": [
@@ -596,7 +645,7 @@
             "clipping.": [
                 "\"Visions of Bodies Being Burned\" artwork"
             ],
-            "Microsoft":[
+            "Microsoft Corporation":[
                 "Visual Studio Code"
             ],
             "VRChat": [
@@ -641,7 +690,7 @@
                 "\"SlashCo\" by Mantibro",
                 "website"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Visual Studio Code",
                 "PoolMon"
             ],
@@ -662,7 +711,7 @@
             "Unity Technologies": [
                 "editor"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Visual Studio Code",
                 "PoolMon"
             ],
@@ -696,7 +745,7 @@
             "STOMACH BOOK": [
                 "\"GOODNIGHT HYPNOPOMP\" artwork"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Xbox"
             ]
         },
@@ -713,7 +762,7 @@
             "Blender Foundation": [
                 "logo"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer",
                 "Xbox"
             ]
@@ -730,7 +779,7 @@
             "Blender Foundation": [
                 "logo"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer",
                 "Xbox"
             ]
@@ -741,11 +790,8 @@
         "Name": "Thank God It Was Arch Linux [non27]]",
         "Date": "2025-06-28 18:49",
         "Credits": {
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer"
-            ],
-            "Joint Photographic Experts Group": [
-                "\"JPEGXL\" corruption"
             ],
             "JPEGMAFIA": [
                 "\"Black Ben Carson\" artwork"
@@ -783,7 +829,7 @@
                 "\"Upgrade! [untitled_0043]]\" artwork"
             ],
             "BLUECHEESE": [
-                "face"
+                "appearance"
             ]
         }
     },
@@ -808,7 +854,7 @@
                 "Subnautica"
             ],
             "BlownUpByAFirework": [
-                "face"
+                "appearance"
             ],
             "BLUECHEESE": [
                 "fnaf image"
@@ -819,7 +865,7 @@
             "VRChat": [
                 "gift badges"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Windows",
                 "Visual Studio Code"
             ]
@@ -834,7 +880,7 @@
                 "\"Antiheat's Apartment\" by Antiheat"
             ],
             "BlownUpByAFirework": [
-                "face"
+                "appearance"
             ],
             "BLUECHEESE": [
                 "fnaf image"
@@ -865,7 +911,7 @@
                 "\"this is a forest\" by toomanychoices"
             ],
             "BookOwnsYou": [
-                "cameo"
+                "appearance"
             ],
             "BlownUpByAFirework": [
                 "the hamster"
@@ -890,7 +936,7 @@
         "Name": "[non17]]",
         "Date": "2025-05-17 16:42",
         "Credits": {
-            "Mojang": [
+            "Mojang Studios": [
                 "Minecraft"
             ]
         },
@@ -1138,7 +1184,7 @@
             "Nukude": [
                 "NKD Protogen"
             ],
-            "Mojang": [
+            "Mojang Studios": [
                 "\"Minecraft\" grass block"
             ]
         },
@@ -1152,7 +1198,7 @@
             "Unity Technologies": [
                 "editor"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "Xbox",
                 "Windows"
             ],
@@ -1199,7 +1245,7 @@
             "VRChat": [
                 "assets"
             ],
-            "Microsoft": [
+            "Microsoft Corporation": [
                 "File Explorer"
             ]
         }
