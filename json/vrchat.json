@@ -184,14 +184,6 @@
                 "URL": "https://vrchat.com/home/group/grp_61ed1e11-41f9-4b8d-89e6-803d808d9dc5"
             },
             {
-                "Name": "Eastern Instances",
-                "Tag": "EAST.4832",
-                "Description": "my theory as to y there r too many western servers is dat vrchat defaults ur server setting to western<br><br>also i spent a good amount of time making dis icon and banner‚ i had to recreate the flag thingy<br>",
-                "Banner": "/images/vrchat/g2b.webp",
-                "Icon": "/images/vrchat/g2.webp",
-                "URL": "https://vrchat.com/home/group/grp_fb331eb3-60f7-46fe-a427-ba12906e9d23"
-            },
-            {
                 "Name": "Object reference not set to an instance of an object",
                 "Tag": "OBJREF.3240",
                 "Description": "NullReferenceException: Object reference not set to an instance of an object at [insert C# script here]<br><br>You'll get the, \"Experienced\" role if you like, experienced the error.<br>Also, don't worry about asking me, I'll know when you do.<br>",
