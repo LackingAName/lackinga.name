@@ -1,5 +1,32 @@
 [
     {
+        "Image": "/images/non/non_0064.webp",
+        "Name": "last of its kind [non_0064]]",
+        "Date": "2026-03-09 11:54 (began 2026-03-08 ≈12:00)",
+        "Credits": {
+            "ImHex": [
+                "image corruption"
+            ],
+            "you are an angel": [
+                "\"you are an angel\" lyrics"
+            ],
+            "VRChat": [
+                "\"Trouble in Terrorist Town\" by Ostinyo",
+                "\"who\" by LackingAName",
+                "\"a horrible amalgamation\" by Agent Enzen",
+                "\"Camp Crystal Lake Warhammer PVP\" by Rezup",
+                "\"Sewers - Yakuza 0\" by ジーピーシルバー",
+                "\"The Lost Shard\" by Sournetic",
+                "\"Lost Atrium\" by Trevady",
+                "\"Zombies Trinity\" by Hpebble",
+                "\"winter train station\" by embassy",
+                "\"Frutiger Mall\" by -KoriCat-",
+                "\"Frutiger Aero World (Night)\" by -KoriCat-"
+            ]
+        },
+        "Base": true
+    },
+    {
         "Image": "/images/non/non_0063.webp",
         "Name": "internal soundtrack [non_0063]]",
         "Date": "2026-02-21 17:32 (began 13:13)",
@@ -8,7 +35,8 @@
                 "\"Murder 4\" by Jar"
             ],
             "glass beach": [
-                "\"plastic death\" artwork"
+                "\"plastic death\" artwork",
+                "\"commatose\" spectrogram"
             ],
             "dälek": [
                 "\"Brilliance of a Falling Moon\" artwork"
