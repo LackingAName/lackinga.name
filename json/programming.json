@@ -93,6 +93,12 @@
         "Show": "why not"
     },
     {
+        "Name": "Io",
+        "Image": "GIVEMEANUPDATEDSVGRAHHHHH",
+        "Words": "really boring logo and i'm SICK of OOP",
+        "Know": "no"
+    },
+    {
         "Name": "Java",
         "Image": "java.svg",
         "Words": "c# is better",
@@ -105,6 +111,12 @@
         "Words": "juuust above python",
         "Know": "yes sadly i hate this",
         "Show": "i guess"
+    },
+    {
+        "Name": "Julia",
+        "Image": "julia.svg",
+        "Words": "very interesting",
+        "Know": "nah"
     },
     {
         "Name": "Kotlin",
@@ -142,6 +154,18 @@
         "Image": "python.svg",
         "Words": "save urself and never learn this, blender pls switch to lua",
         "Know": "the least amount i can"
+    },
+    {
+        "Name": "Rebol",
+        "Image": "rebol.png",
+        "Words": "simple isn't always better",
+        "Know": "no"
+    },
+    {
+        "Name": "Red",
+        "Image": "red.svg",
+        "Words": "rebol++ or something",
+        "Know": "no"
     },
     {
         "Name": "Ruby",
