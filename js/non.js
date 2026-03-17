@@ -1,8 +1,21 @@
-let Container;
+let TabButtons;
+let Grids;
 
 document.addEventListener("DOMContentLoaded", function () {
-    let Grid = document.getElementsByClassName("nongrid")[0];
-    Container = document.getElementById("Container");
+	TabButtons = document.getElementById("Tabs").getElementsByTagName("button");
+	Grids = document.getElementById("Grids");
+
+    Loadnons();
+});
+
+function Loadnons() {
+	TabButtons[0].className = "Active";
+	TabButtons[1].className = "";
+
+	Grids.innerHTML = "";
+	let Grid = document.createElement("div");
+	Grid.className = "nongrid";
+	Grids.appendChild(Grid);
 
     $.getJSON("/json/non.json", function (JSON) {
 		const nonCount = Object.keys(JSON).length - 16; // 16 is the extra data
@@ -24,13 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
 					Label.style.fontSize = "64px";
 					Label.style.marginTop = "80px";
 					Label.innerHTML = Data.Separator;
-					Container.appendChild(Label);
+					Grids.appendChild(Label);
 				}
 
 				// set to new grid
 				Grid = document.createElement("div");
 				Grid.className = "nongrid";
-				Container.appendChild(Grid);
+				Grids.appendChild(Grid);
 
 				return;
 			}
@@ -74,7 +87,42 @@ document.addEventListener("DOMContentLoaded", function () {
 			Grid.appendChild(nonContainer);
         });
     });
-});
+}
+
+function Loadanons() {
+	TabButtons[0].className = "";
+	TabButtons[1].className = "Active";
+
+	Grids.innerHTML = "";
+	let Grid = document.createElement("div");
+	Grid.className = "anongrid";
+	Grids.appendChild(Grid);
+
+	Grid.innerHTML += "this will look bettr next moths"
+
+    $.getJSON("/json/anon.json", function (JSON) {
+        $.each(JSON, function (_, Data) {
+			const anonContainer = document.createElement("div");
+			{
+				for (let I = 0; I < Data.Audio.length; I++) {
+					anonContainer.innerHTML += Data.Name[I] + "<br>" + Data.Date[I];
+
+					const anonAudio = document.createElement("audio");
+					//anonAudio.className = Fav;
+					anonAudio.setAttribute("controls", "");
+					anonAudio.src = Data.Audio[I];
+					//anonAudio.volume = 0.3;
+					anonContainer.appendChild(anonAudio);
+				}
+			}
+			Grid.appendChild(anonContainer);
+        });
+
+		// html/js SUCK
+		let Audios = Grid.getElementsByTagName("audio");
+		for (let I = 0; I < Audios.length; I++) Audios[I].volume = 0.3;
+    });
+}
 
 function CreditsPopup(JSON) {
 	let Credits = "";
