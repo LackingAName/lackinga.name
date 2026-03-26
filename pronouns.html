@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex">
+		<title>index</title>
+		<link rel="stylesheet" href="/css/local.css">
+		<script src="/js/shared.js"></script>
+		<script src="js/local.js"></script>
+		<script type="module" src="/modules/jquery.js"></script>
+</head>
+	<body id="index">
+		<div id="nav"></div>
+		<div id="navpadding"></div>
+
+		<div id="Container">
+			<h1>I am carets</h1>
+			<h2>I am also lackinganame (brand)</h2>
+			<h3>I am ^^</h3>
+
+			<div class="linebreak"></div>
+
+			<p style="font-size: 32px;">pronouns(.)page as requested</p>
+			<p style="font-size: 16px;">i'm very nervous about this</p>
+
+			<div style="margin: 20px; justify-self: center;">
+				<Vertical style="gap: 0px;">
+					<Horizontal>
+						<img style="width: 128px;" src="images/carets.webp"></img>
+						<p style="align-self: center;">carets</p>
+					</Horizontal>
+					<Label>
+						(c)haaii, i'mma programmer and other stuffs
+					</Label>
+
+					<br><br>
+
+					<Horizontal style="gap: 100px">
+						<Vertical>
+							<Heading>names</Heading>
+							<Horizontal><Label class="yes">carets</Label></Horizontal>
+							<Horizontal><Label>caretsaname</Label></Horizontal>
+							<Horizontal><Label>lacking</Label></Horizontal>
+							<Horizontal><Label>lackinganame</Label></Horizontal>
+							<Horizontal><Label>*aname</Label></Horizontal>
+							<Horizontal><Label>lackinga*</Label></Horizontal>
+						</Vertical>
+						<Vertical>
+							<Heading>pronouns</Heading>
+							<Horizontal><Label class="yes">she/her</Label></Horizontal>
+							<Horizontal><Label>they/them</Label></Horizontal>
+							<Horizontal><Label class="no">he/him</Label></Horizontal>
+						</Vertical>
+						<Vertical>
+							<Heading>words</Heading>
+							<Label class="yes">girl</Label>
+							<Label class="yes">woman</Label>
+						</Vertical>
+					</Horizontal>
+				</Vertical>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	Horizontal {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+	Vertical {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-self: left;
+	}
+	Label {
+		font-family: var(--font);
+		color: #fff;
+	}
+	Heading {
+		font-family: var(--font);
+		color: #fff;
+		font-size: 30px;
+	}
+	SubHeading {
+		font-family: var(--font);
+		color: #fff;
+		font-size: 20px;
+	}
+
+	.yes {
+		color: #ff63cb;
+		font-weight: bold;
+	}
+	.no {
+		color: #adb5bd;
+		font-size: 14px;
+	}
+</style>

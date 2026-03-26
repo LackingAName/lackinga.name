@@ -23,7 +23,8 @@
 #UserButton {
     background: #ffffff00;
     color: #ffffff00;
-    width: 1024px;
+    width: 90%;
+    max-width: 1024px;
     height: 100%;
     position: absolute;
     top: 0;
