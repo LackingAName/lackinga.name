@@ -21,7 +21,7 @@
 			<div class="linebreak"></div>
 
 			<p style="font-size: 32px;">pronouns(.)page as requested</p>
-			<p style="font-size: 16px;">i'm very nervous about this</p>
+			<p style="font-size: 16px;">i am very nervous about this</p>
 
 			<div style="margin: 20px; justify-self: center;">
 				<Vertical style="gap: 0px;">
@@ -38,23 +38,31 @@
 					<Horizontal style="gap: 100px">
 						<Vertical>
 							<Heading>names</Heading>
-							<Horizontal><Label class="yes">carets</Label></Horizontal>
-							<Horizontal><Label>caretsaname</Label></Horizontal>
-							<Horizontal><Label>lacking</Label></Horizontal>
-							<Horizontal><Label>lackinganame</Label></Horizontal>
-							<Horizontal><Label>*aname</Label></Horizontal>
-							<Horizontal><Label>lackinga*</Label></Horizontal>
+							<Horizontal><Label title="yes">carets</Label></Horizontal>
+							<Horizontal><Label title="jokingly">caretsaname</Label></Horizontal>
+							<Horizontal><Label title="jokingly">*aname</Label></Horizontal>
+							<Horizontal><Label title="jokingly">lackinga*</Label></Horizontal>
+							<Horizontal><Label title="okay">lacking</Label></Horizontal>
+							<Horizontal><Label title="okay">lackinganame</Label></Horizontal>
+							<Horizontal><Label title="no">galabeam</Label></Horizontal>
 						</Vertical>
 						<Vertical>
 							<Heading>pronouns</Heading>
-							<Horizontal><Label class="yes">she/her</Label></Horizontal>
-							<Horizontal><Label>they/them</Label></Horizontal>
-							<Horizontal><Label class="no">he/him</Label></Horizontal>
+							<Horizontal><Label title="yes">she/her</Label></Horizontal>
+							<Horizontal><Label title="yes">they/them</Label></Horizontal>
+							<Horizontal><Label title="no">he/him</Label></Horizontal>
+							<Horizontal><Label title="no">it/its</Label></Horizontal>
 						</Vertical>
 						<Vertical>
 							<Heading>words</Heading>
-							<Label class="yes">girl</Label>
-							<Label class="yes">woman</Label>
+							<Label title="yes">girl</Label>
+							<Label title="yes">woman</Label>
+							<Label title="jokingly">dude</Label>
+							<Label title="jokingly">bro</Label>
+							<Label title="okay">guy</Label>
+							<Label title="okay">sis</Label>
+							<Label title="no">boy</Label>
+							<Label title="no">man</Label>
 						</Vertical>
 					</Horizontal>
 				</Vertical>
@@ -90,11 +98,14 @@
 		font-size: 20px;
 	}
 
-	.yes {
+	[title="yes"] {
 		color: #ff63cb;
 		font-weight: bold;
 	}
-	.no {
+	[title="jokingly"] {
+		color: #feb272;
+	}
+	[title="no"] {
 		color: #adb5bd;
 		font-size: 14px;
 	}
