@@ -5,8 +5,5 @@
         "non": "/non",
         "programming": "/programming",
         "credits": "/credits"
-    },
-    {
-        "class # *": "/class"
     }
 ]

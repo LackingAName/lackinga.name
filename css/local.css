@@ -127,18 +127,13 @@ video {
     height: calc(100vh - 100px);
     margin: 20px;
 }
-#error {
-    font-size: 100px;
-    letter-spacing: 10vw;
-    text-indent: 10vw;
-}
-.linebreak {
+.LineBreak {
     border-top: 5px solid #fff;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 40px;
 }
-.rgbtext {
+.RGBText {
     color: transparent;
     background: linear-gradient(to right, 
         #ff0000,
@@ -172,7 +167,7 @@ video {
 }
 
 /* navbar */
-#nav {
+#Navbar {
     font-size: 16px;
     background: none;
     height: 30px;
@@ -183,10 +178,10 @@ video {
     align-content: center;
     top: 0;
 }
-#navpadding {
+#NavbarPadding {
     padding-bottom: 50px;
 }
-#nav .Item {
+#Navbar .Item {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -199,22 +194,22 @@ video {
 
     transition: transform 0.1s;
 }
-#nav a, #nav p {
+#Navbar a, #Navbar p {
     color: #000;
     font-size: 20px;
     font-family: var(--font);
     font-weight: bold;
 }
-#nav .Index { float: left; }
-#nav img {
+#Navbar .Index { float: left; }
+#Navbar img {
     height: inherit;
     image-rendering: auto;
 }
 
-#nav .Item:hover .Dropdown {
+#Navbar .Item:hover .Dropdown {
     display: block;
 }
-#nav .Dropdown {
+#Navbar .Dropdown {
     display: none;
     position: absolute;
     transform: translate(-116px, 30px);

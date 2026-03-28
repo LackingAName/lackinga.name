@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(ULGlitch, 50);
 
     $.getJSON("/json/nav.json", function (Data) {
-        const nav = document.getElementById("nav");
+        const nav = document.getElementById("Navbar");
 
         $.each(Data[0], function (Key, Value) {
             if (Key === "index") {
@@ -28,21 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.prepend(a);
         });
 
-        const DropdownItem = document.createElement("div");
-        DropdownItem.className = "Item";
-        DropdownItem.innerHTML = "🞃";
-        nav.prepend(DropdownItem);
+        if (Data[1]) {
+            const DropdownItem = document.createElement("div");
+            DropdownItem.className = "Item";
+            DropdownItem.innerHTML = "🞃";
+            nav.prepend(DropdownItem);
 
-        const Dropdown = document.createElement("div");
-        Dropdown.className = "Dropdown";
-        DropdownItem.prepend(Dropdown);
+            const Dropdown = document.createElement("div");
+            Dropdown.className = "Dropdown";
+            DropdownItem.prepend(Dropdown);
 
-        $.each(Data[1], function (Key, Value) {
-            const a = document.createElement("a");
-            a.href = Value;
-            a.innerHTML = Key;
-            Dropdown.prepend(a);
-        });
+            $.each(Data[1], function (Key, Value) {
+                const a = document.createElement("a");
+                a.href = Value;
+                a.innerHTML = Key;
+                Dropdown.prepend(a);
+            });
+        }
     });
 });
 
